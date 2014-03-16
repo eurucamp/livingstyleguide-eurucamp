@@ -3,6 +3,9 @@ title: "Living Style Guide for the Eurucamp 2014"
 style:
   base-font: sonar
   color: $red
+  code-background-color: $yellow
+  code-color: $red
+  highlight-color: $white
 
 styleguide-sass: |
   .livingstyleguide--page-title,
@@ -12,4 +15,9 @@ styleguide-sass: |
     text-align: center
     text-transform: uppercase
 
+  .livingstyleguide--example.-lsg-has-full-width
+    padding: 0
+
+  .livingstyleguide--footer
+    display: block
 
