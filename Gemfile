@@ -5,5 +5,7 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'compass', '1.0.0.alpha.19'
 gem 'compass-placeholders'
+gem 'redcarpet', '3.0.0'
+gem 'hooks', '0.3.4'
 gem 'livingstyleguide'
 
