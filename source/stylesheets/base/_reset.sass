@@ -1,0 +1,29 @@
+*
+  background: transparent
+  border: none
+  border-collapse: collapse
+  border-radius: 0
+  border-spacing: 0
+  color: inherit
+  display: inline
+  font-size: inherit
+  font-style: inherit
+  font-weight: inherit
+  line-height: inherit
+  list-style: none
+  margin: 0
+  padding: 0
+  text-align: inherit
+  text-decoration: none
+  vertical-align: baseline
+  -webkit-font-smoothing: antialiased
+  @include box-sizing(border-box)
+
+head,
+style,
+script
+  @extend %display-none
+
+option
+  @extend %display-block
+
