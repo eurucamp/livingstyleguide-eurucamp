@@ -1,3 +1,15 @@
 source: stylesheets/eurucamp.css.sass
 title: "Living Style Guide for the Eurucamp 2014"
+style:
+  base-font: sonar
+  color: $red
+
+styleguide-sass: |
+  .livingstyleguide--page-title,
+  .livingstyleguide--headline,
+  .livingstyleguide--sub-headline,
+  .livingstyleguide--sub-sub-headline
+    text-align: center
+    text-transform: uppercase
+
 
