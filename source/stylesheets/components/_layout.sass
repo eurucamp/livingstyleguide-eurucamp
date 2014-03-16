@@ -1,0 +1,50 @@
+.layout
+  font-family: sonar, arial, sans-serif
+  font-size: 14px
+
+
+.layout--header
+  @extend %pie-clearfix
+  background: $red
+  display: block
+  padding: 10px
+
+
+.layout--header-container
+  display: block
+  margin: auto
+  width: 960px
+
+
+.layout--header-navigation
+  @extend %float-right
+
+
+.layout--header-navigation-item
+  color: $white
+  cursor: pointer
+  float: left
+  font-weight: 600
+  margin-left: 20px
+  text-transform: uppercase
+
+  &:hover
+    color: $yellow
+
+
+.layout--footer
+  @extend .layout--header
+
+
+.layout--footer-container
+  @extend .layout--header-container
+
+
+.layout--footer-navigation
+  @extend .layout--header-navigation
+
+
+.layout--footer-navigation-item
+  @extend .layout--header-navigation-item
+
+
