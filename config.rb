@@ -36,7 +36,7 @@ page "index.html", layout: false
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -68,3 +68,17 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+LivingStyleGuide::Example.add_filter :markdown do
+  begin
+    @syntax = :markdown
+
+    pre_processor do |markdown|
+      renderer = LivingStyleGuide::RedcarpetHTML.new(prefix: 'text--')
+      redcarpet = ::Redcarpet::Markdown.new(renderer, LivingStyleGuide::REDCARPET_RENDER_OPTIONS)
+      %Q(<article class="text">\n#{redcarpet.render(markdown)}\n</article>)
+    end
+
+  end
+end
+

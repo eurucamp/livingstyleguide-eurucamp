@@ -6,6 +6,7 @@ style:
   code-background-color: $yellow
   code-color: $red
   highlight-color: $white
+  layout-selector: '".layout"'
 
 styleguide-sass: |
   .livingstyleguide--page-title,

@@ -1,0 +1,69 @@
+.text
+  font-family: sonar, arial, sans-serif
+  font-size: 14px
+  @extend %display-block
+
+  strong
+    font-weight: bold
+
+  em
+    font-style: italic
+
+  a
+    @extend %hover-link
+    color: $red
+
+  h2
+    color: $red
+    display: block
+    font-size: 36px
+    font-weight: bold
+    margin: 0 0 0.75em
+
+  h3
+    color: $red
+    display: block
+    font-size: 24px
+    font-weight: bold
+    margin: 2em 0 0.75em
+
+  h2 + h3
+    margin-top: -0.5em
+
+  p
+    display: block
+    margin: 0 0 0.75em
+
+  blockquote
+    color: $dark-red
+    display: block
+    margin: 1.5em 3em
+    position: relative
+    @include quotation-marks(en)
+
+    &:before
+      font-size: 3em
+      position: absolute
+      right: 101%
+      top: -0.25em
+
+    &:after
+      display: none
+
+  ul,
+  ol
+    display: block
+    margin: 0 0 0.75em
+
+  li
+    display: block
+    margin: 0 0 0.25em 3em
+    position: relative
+
+    &:before
+      color: $dark-yellow
+      content: "–"
+      position: absolute
+      right: 102%
+
+
