@@ -22,3 +22,6 @@ styleguide-sass: |
   .livingstyleguide--footer
     display: block
 
+  .livingstyleguide--example
+    @extend .layout
+

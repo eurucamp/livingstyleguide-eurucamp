@@ -1,0 +1,27 @@
+.cover
+  @extend %grain
+  background-color: $yellow
+  display: block
+
+
+.cover--container
+  background: inline-image("cover.svg") no-repeat center
+  display: block
+  height: 550px
+  position: relative
+
+
+.cover--date,
+.cover--location
+  font-weight: bold
+  left: 50%
+  margin-left: -200px
+  position: absolute
+  text-align: center
+  text-transform: uppercase
+  top: 220px
+  width: 400px
+
+.cover--location
+  top: 310px
+
