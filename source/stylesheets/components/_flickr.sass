@@ -1,0 +1,28 @@
+.flickr
+  background: $white
+  display: block
+
+
+.flickr--container
+  @extend %container
+
+
+.flickr--title
+  @extend %headline
+
+
+.flickr--photos-item
+  background: $dark-gray
+  float: left
+  height: 0
+  overflow: hidden
+  padding: 12.5% 0
+  position: relative
+  width: 50%
+
+
+.flickr--photos-item-photo
+  width: 100%
+  @include transform(translateY(-50%))
+
+
