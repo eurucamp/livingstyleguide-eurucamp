@@ -1,0 +1,18 @@
+.sponsors
+  background: $yellow
+  display: block
+
+
+.sponsors--container
+  @extend %container
+
+
+.sponsors--title
+  @extend %headline
+
+  &:before
+    content: inline-image("sponsors--icon.svg")
+    display: block
+    margin: auto
+    width: 20px
+
