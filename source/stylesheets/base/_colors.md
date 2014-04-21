@@ -4,7 +4,7 @@ Colors
 ```
 @colors
 - -         -            $white      -
-- $fucsia   -            $light-gray -
+- $fuchsia  -            $light-gray -
 - $red      $light-green $gray       -
 - $dark-red $green       $dark-gray  -
 - -         -            $black      -
