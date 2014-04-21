@@ -5,3 +5,20 @@
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
     background-size: 100px
 
+
+%show-more
+  background: rgba(black, 0.3)
+  color: $white
+  cursor: pointer
+  display: inline-block
+  font-weight: bold
+  left: 50%
+  margin: 20px auto 0
+  padding: 4px 10px 6px
+  position: relative
+  text-transform: uppercase
+  @include transform(translateX(-50%))
+
+  &:hover
+    background: rgba(black, 0.4)
+

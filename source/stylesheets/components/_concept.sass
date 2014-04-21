@@ -1,0 +1,30 @@
+.concept
+  background: $white
+  display: block
+
+
+.concept--container
+  @extend %container
+
+
+.concept--title
+  @extend %headline
+
+
+.concept--photo-container
+  background: $dark-gray
+  display: block
+  height: 0
+  overflow: hidden
+  padding: 25% 0
+  position: relative
+
+
+.concept--photo
+  width: 100%
+  @include transform(translateY(-50%))
+
+
+.concept--show-more
+  @extend %show-more
+
