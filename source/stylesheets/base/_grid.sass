@@ -20,7 +20,19 @@
   width: $column-width * $width
 
 
-@mixin grid($desktop)
+@mixin grid($desktop, $pad: false, $phone-wide: false, $phone: false)
   @extend %column
   @include column-width-and-margin(100% / 12, $desktop)
+
+  @if $pad
+    @media all and (max-width: 800px)
+      @include column-width-and-margin(100% / 8, $pad)
+
+  @if $phone-wide
+    @media all and (max-width: 600px)
+      @include column-width-and-margin(100% / 6, $phone-wide)
+
+  @if $phone
+    @media all and (max-width: 400px)
+      @include column-width-and-margin(100% / 4, $phone)
 
