@@ -24,4 +24,9 @@ styleguide-sass: |
 
   .livingstyleguide--example
     @extend .layout
+    max-width: $livingstyleguide--width
+    width: 100%
+
+    &.-lsg-has-full-width
+      max-width: 100%
 
