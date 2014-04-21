@@ -12,8 +12,10 @@ Speakers
         <span class="***speakers--list-item-name***">Name</span>
       </li>
       <li class="speakers--list-item">
-        <img class="speakers--list-item-avatar" src="images/dummy/avatar.jpg">
-        <span class="speakers--list-item-name">Name</span>
+        <a ***href***>
+          <img class="speakers--list-item-avatar" src="images/dummy/avatar.jpg">
+          <span class="speakers--list-item-name">Name</span>
+        </a>
       </li>
       <li class="speakers--list-item">
         <img class="speakers--list-item-avatar" src="images/dummy/avatar.jpg">
