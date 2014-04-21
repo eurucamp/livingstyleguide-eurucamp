@@ -82,3 +82,41 @@ LivingStyleGuide::Example.add_filter :markdown do
   end
 end
 
+
+module InlineSVG
+
+  def inline_svg(path, mime_type = nil)
+    path = path.value
+    real_path = File.join(::Compass.configuration.images_path, path)
+    svg = data(real_path)
+    colors = File.readlines(File.join(%w(source stylesheets base _colors.sass))).compact
+    colors.each do |line|
+      if m = line.match(%r(^(?<variable>.+):\s*(?<color>.+)$))
+        svg.gsub! m[:variable], m[:color]
+      end
+    end
+    inline_image_string(svg, 'image/svg+xml')
+  end
+
+  protected
+  def inline_image_string(data, mime_type)
+    data = [data].flatten.pack('m').gsub("\n","")
+    url = "url('data:#{mime_type};base64,#{data}')"
+    unquoted_string(url)
+  end
+
+  private
+  def data(real_path)
+    if File.readable?(real_path)
+      File.open(real_path, "rb") {|io| io.read}
+    else
+      raise ::Compass::Error, "File not found or cannot be read: #{real_path}"
+    end
+  end
+
+end
+
+module ::Sass::Script::Functions
+  include InlineSVG
+end
+
