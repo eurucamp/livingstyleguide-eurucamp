@@ -9,7 +9,7 @@ Flickr
       <a class="***flickr--photos-item***">
         <img class="***flickr--photos-item-photo***" src="https://farm4.staticflickr.com/3711/9666710138_204bba8645.jpg">
       </a>
-      <a class="flickr--photos-item">
+      <a class="flickr--photos-item" ***href***>
         <img class="flickr--photos-item-photo" src="https://farm6.staticflickr.com/5343/9663483709_80a6dd1582.jpg">
       </a>
       <a class="flickr--photos-item">

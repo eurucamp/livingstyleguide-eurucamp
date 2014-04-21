@@ -22,6 +22,12 @@
   width: 100%
   @include transform(translateY(-50%))
 
+  [href] &
+    cursor: pointer
+
+    &:hover
+      opacity: 0.8
+
 
 .flickr--show-more
   @extend %show-more
