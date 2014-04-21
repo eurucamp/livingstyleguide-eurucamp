@@ -1,0 +1,40 @@
+.info
+  background: $red
+  display: block
+
+
+.info--container
+  @extend %container
+  padding-bottom: 0
+
+
+.info--section
+  margin-bottom: 50px
+  @include grid(4, false, 6)
+
+
+.info--section-title
+  @extend %headline
+  color: $yellow
+
+  &:before
+    display: block
+    margin: auto
+    width: 60px
+
+    @each $type in tickets guide blog
+      .info--section.-#{$type} &
+        content: inline-image("info--#{$type}.svg")
+
+
+.info--section-paragraph
+  color: $white
+  display: block
+  font-weight: bold
+  margin: 0.75em 0
+  text-align: center
+
+
+.info--section-show-more
+  @extend %show-more
+
