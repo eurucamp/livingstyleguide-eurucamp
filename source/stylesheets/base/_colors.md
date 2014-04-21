@@ -3,9 +3,10 @@ Colors
 
 ```
 @colors
-- -         -            $white     -
-- $red      $yellow      $gray      -
-- $dark-red $dark-yellow $dark-gray -
-- -         -            $black     -
+- -         -            $white      -
+- -         -            $light-gray -
+- $red      $yellow      $gray       -
+- $dark-red $dark-yellow $dark-gray  -
+- -         -            $black      -
 ```
 
