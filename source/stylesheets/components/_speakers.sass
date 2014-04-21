@@ -11,7 +11,7 @@
   @extend %headline
 
   &:before
-    content: inline-image("speakers--icon.svg")
+    content: inline-svg("speakers--icon.svg")
     display: block
     margin: auto
     width: 20px
@@ -32,12 +32,12 @@
   width: 100%
 
   [href]:hover &
-    border-color: $dark-yellow
+    border-color: $green
     cursor: pointer
 
 
 .speakers--list-item-name
-  background: $yellow
+  background: $light-green
   color: $dark-gray
   display: block
   font-weight: bold
@@ -46,6 +46,6 @@
   text-transform: uppercase
 
   [href]:hover &
-    background: $dark-yellow
+    background: $green
     cursor: pointer
 

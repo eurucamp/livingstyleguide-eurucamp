@@ -3,7 +3,7 @@ title: "Living Style Guide for the Eurucamp 2014"
 style:
   base-font: sonar
   color: $red
-  code-background-color: $yellow
+  code-background-color: $light-green
   code-color: $red
   highlight-color: $white
   layout-selector: '".layout"'

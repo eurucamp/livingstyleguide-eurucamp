@@ -15,7 +15,7 @@
 
 .info--section-title
   @extend %headline
-  color: $yellow
+  color: $light-green
 
   &:before
     display: block
@@ -24,7 +24,7 @@
 
     @each $type in tickets guide blog
       .info--section.-#{$type} &
-        content: inline-image("info--#{$type}.svg")
+        content: inline-svg("info--#{$type}.svg")
 
 
 .info--section-paragraph

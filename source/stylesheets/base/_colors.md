@@ -4,9 +4,9 @@ Colors
 ```
 @colors
 - -         -            $white      -
-- -         -            $light-gray -
-- $red      $yellow      $gray       -
-- $dark-red $dark-yellow $dark-gray  -
+- $fuchsia  -            $light-gray -
+- $red      $light-green $gray       -
+- $dark-red $green       $dark-gray  -
 - -         -            $black      -
 ```
 
