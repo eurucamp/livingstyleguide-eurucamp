@@ -1,0 +1,42 @@
+.speakers
+  background: $white
+  display: block
+
+
+.speakers--container
+  @extend %container
+
+
+.speakers--title
+  @extend %headline
+
+  &:before
+    content: inline-image("speakers--icon.svg")
+    display: block
+    margin: auto
+    width: 20px
+
+
+.speakers--list-item
+  display: block
+  @include grid(2)
+
+
+.speakers--list-item-avatar
+  border: 5px $gray solid
+  border-radius: 50%
+  display: block
+  height: 100%
+  margin-bottom: 10px
+  width: 100%
+
+
+.speakers--list-item-name
+  background: $yellow
+  color: $dark-gray
+  display: block
+  font-weight: bold
+  padding: 5px
+  text-align: center
+  text-transform: uppercase
+

@@ -1,0 +1,26 @@
+%container
+  @extend %pie-clearfix
+  display: block
+  margin: auto
+  max-width: 960px
+  padding: 50px 10px
+
+
+%column
+  float: left
+  padding: 0 10px
+
+
+@mixin column-width-and-margin($column-width, $values)
+  $width: nth($values, 1)
+  $margin-left: 0
+  @if length($values) == 2
+    $margin-left: nth($values, 2)
+  margin-left: $column-width * $margin-left
+  width: $column-width * $width
+
+
+@mixin grid($desktop)
+  @extend %column
+  @include column-width-and-margin(100% / 12, $desktop)
+

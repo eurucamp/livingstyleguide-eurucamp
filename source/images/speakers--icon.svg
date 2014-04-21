@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="30px" viewBox="0 0 21 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0 (7573) - http://www.bohemiancoding.com/sketch -->
+    <title>speakers--icon</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="speakers--icon" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
+            <path d="M-0.486,9.27 L19.514,9.27 L19.514,29.27 L-0.486,9.27 Z" id="Shape" fill="#F94203" sketch:type="MSShapeGroup"></path>
+            <path d="M-0.486,29.27 L-0.486,9.27 L9.77,0.033 L19.514,9.27 L-0.486,29.27 Z" id="Shape" fill="#F2CF03" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
