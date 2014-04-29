@@ -14,7 +14,9 @@ Layout
       </nav>
     </div>
   </header>
-  Content goes here
+  <div class="***layout--container***">
+    Content goes here
+  </div>
   <footer class="***layout--footer***">
     <div class="***layout--footer-container***">
       <p class="***layout--footer-text***">
