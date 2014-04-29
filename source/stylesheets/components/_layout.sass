@@ -42,6 +42,8 @@
   margin-left: 20px
   text-transform: uppercase
 
+
+.layout--header-navigation-item
   &:hover
     color: $light-green
 
@@ -61,4 +63,12 @@
 .layout--footer-navigation-item
   @extend .layout--header-navigation-item
 
+
+.layout--footer-text
+  &,
+  &:hover
+    @extend .layout--header-navigation-item
+    color: $light-gray
+    cursor: default
+    margin: 0 20px 0 0
 

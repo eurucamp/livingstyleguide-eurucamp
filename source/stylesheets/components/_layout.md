@@ -17,6 +17,9 @@ Layout
   Content goes here
   <footer class="***layout--footer***">
     <div class="***layout--footer-container***">
+      <p class="***layout--footer-text***">
+        Some text
+      </p>
       <nav class="***layout--footer-navigation***">
         <a class="***layout--footer-navigation-item***">Link</a>
         <a class="layout--footer-navigation-item">Link</a>
