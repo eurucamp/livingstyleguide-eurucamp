@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="30px" viewBox="0 0 48 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>flag</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="flag" sketch:type="MSLayerGroup">
+            <path d="M46.986,24.804 L0,29.479 C0,29.479 2.922,21.305 2.922,14.301 C2.922,7.297 0,0 0,0 L46.986,4.674 L34.134,14.447 L46.986,24.804 L46.986,24.804 Z" id="Shape-8" fill="$green" sketch:type="MSShapeGroup"></path>
+            <path d="M6,2.84217094e-14 L33.295,25.631 L47.301,24.237 L34.449,13.881 L47.301,4.108 L6,2.84217094e-14 Z" id="Shape-6" opacity="0.328444511" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M19.129,6 C13.826,6 10,9.717 10,14.912 C10,20.145 13.572,23.573 19.309,23.573 C22.594,23.573 25.841,22.346 27.429,19.711 L23.28,16.861 C22.233,18.413 21.006,19.025 19.49,19.025 C17.795,19.025 16.243,18.016 16.063,16.175 L27.899,16.139 C27.971,15.634 27.971,15.165 27.971,14.697 C27.971,9.537 24.722,6 19.129,6 L19.129,6 Z M16.134,12.495 C16.494,10.979 17.722,10.113 19.164,10.113 C20.608,10.113 21.8,10.979 22.197,12.495 L16.134,12.495 L16.134,12.495 Z" id="Shape-7" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

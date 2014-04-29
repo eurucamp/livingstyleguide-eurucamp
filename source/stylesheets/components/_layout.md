@@ -6,6 +6,7 @@ Layout
 <div class="***layout***">
   <header class="***layout--header***">
     <div class="***layout--header-container***">
+      <a class="***layout--header-logo***">eurucamp</a>
       <nav class="***layout--header-navigation***">
         <a class="***layout--header-navigation-item***">Link</a>
         <a class="layout--header-navigation-item">Link</a>
