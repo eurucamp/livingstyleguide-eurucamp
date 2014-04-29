@@ -19,10 +19,15 @@
 .layout--header-logo
   @extend %hide-text
   background: inline-svg("flag.svg") no-repeat 0 50%
+  cursor: pointer
   float: left
   height: 30px
   margin: -5px 0
   width: 48px
+
+  &:hover
+    @include filter(unquote("brightness(1.1)"))
+    @include transform(translateZ(0))
 
 
 .layout--header-navigation
