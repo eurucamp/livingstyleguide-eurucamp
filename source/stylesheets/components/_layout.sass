@@ -42,8 +42,6 @@
   margin-left: 20px
   text-transform: uppercase
 
-
-.layout--header-navigation-item
   &:hover
     color: $light-green
 
@@ -69,11 +67,25 @@
 
 
 .layout--footer-text
-  &,
-  &:hover
-    @extend .layout--header-navigation-item
-    color: $light-gray
-    cursor: default
-    margin: 0 20px 0 0
-    text-transform: none
+  color: $light-gray
+  float: left
+  font-weight: 600
+  text-transform: uppercase
+  margin-right: 20px
+  text-transform: none
+
+
+.layout--footer-navigation,
+.layout--footer-navigation-item,
+.layout--footer-text
+  @media all and (max-width: 900px)
+    float: none
+    margin: 0 10px
+
+.layout--footer-navigation,
+.layout--footer-text
+  @media all and (max-width: 900px)
+    display: block
+    margin: 5px 0
+    text-align: center
 
