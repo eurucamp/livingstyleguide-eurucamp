@@ -5,10 +5,15 @@
 
 
 .cover--container
+  @extend %container
   background: inline-svg("eurucamp-2014.svg") no-repeat center
   display: block
   height: 450px
   position: relative
+
+  @media all and (max-width: 700px)
+    background-size: 80%
+    height: 350px
 
 
 .cover--date,
@@ -20,9 +25,15 @@
   position: absolute
   text-align: center
   text-transform: uppercase
-  top: 178px
+  top: 180px
   width: 400px
 
+  @media all and (max-width: 700px)
+    top: 68px
+
 .cover--location
-  top: 244px
+  top: 242px
+
+  @media all and (max-width: 700px)
+    top: 264px
 
