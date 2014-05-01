@@ -9,3 +9,4 @@ gem 'redcarpet', '3.0.0'
 gem 'livingstyleguide', git: 'git@github.com:hagenburger/livingstyleguide.git', branch: 'feature/website-v3'
 gem 'quotation-marks'
 
+gem 'middleman-s3_sync'
