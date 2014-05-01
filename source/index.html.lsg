@@ -1,5 +1,5 @@
 source: stylesheets/eurucamp.css.sass
-title: "Living Style Guide for the Eurucamp 2014"
+title: "Living Style Guide for the eurucamp 2014"
 style:
   base-font: sonar
   color: $red

@@ -1,4 +1,4 @@
-Eurucamp’s Living Style Guide
+eurucamp’s Living Style Guide
 =============================
 
 Live version: <http://livingstyleguide.com/eurucamp/>
