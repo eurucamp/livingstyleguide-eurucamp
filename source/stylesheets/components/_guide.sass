@@ -1,0 +1,29 @@
+.guide
+  background: $light-green
+  display: block
+
+.guide--container
+  @extend %container
+
+.guide--title
+  @extend %headline
+  color: $dark-red
+
+
+.guide--photo-container
+  background: $dark-gray
+  display: block
+  height: 0
+  overflow: hidden
+  padding: 25% 0
+  position: relative
+
+
+.guide--photo
+  width: 100%
+  @include transform(translateY(-50%))
+
+
+.guide--show-more
+  @extend %show-more
+

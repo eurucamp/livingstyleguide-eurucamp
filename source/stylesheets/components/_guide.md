@@ -1,0 +1,16 @@
+Guide
+=====
+
+~~~
+
+<section class="***guide***">
+  <div class="***guide--container***">
+    <h1 class="***guide--title***">HPI Berlin Brandenburg</h1>
+    <div class="***guide--photo-container***">
+      <img class="***guide--photo***" src="https://farm4.staticflickr.com/3696/9702238265_3343801c57_b.jpg">
+    </div>
+    <a class="guide--show-more">Venue</a>
+  </div>
+</section>
+~~~
+
