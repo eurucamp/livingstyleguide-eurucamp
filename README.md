@@ -32,3 +32,11 @@ and add your AWS credentials.
 To deploy the site:
 
     bundle exec middleman build && bundle exec middleman s3_sync
+
+## Logo
+
+Don't use the eurucamp logo for your instance to avoid confusion.
+
+## License
+
+Please see the accompanying `LICENSE` file.
