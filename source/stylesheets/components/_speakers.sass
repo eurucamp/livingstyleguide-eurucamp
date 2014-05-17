@@ -20,7 +20,8 @@
 .speakers--list-item
   display: block
   margin-bottom: 20px
-  @include grid(2, 2, 2, 2)
+  @include grid(3, false, 2, 2)
+  padding: 0
 
 .speakers--list-item-avatar
   //border: 5px $gray solid
@@ -39,7 +40,7 @@
     cursor: pointer
 
 .speakers--list-item-name
-  background: $light-green
+  //background: $light-green
   color: $dark-gray
   display: block
   font-weight: bold
