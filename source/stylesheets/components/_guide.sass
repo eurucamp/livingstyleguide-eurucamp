@@ -21,14 +21,12 @@
   @include transform-origin(50px, 100px)
   @include transform(rotate(-45deg))
 
-
 .guide--photo-container
   display: block
   height: 0
   overflow: hidden
   padding: 25% 0
   position: relative
-
 
 .guide--photo
   width: 100%
@@ -43,3 +41,25 @@
   background: none
   &:hover
     background: none
+
+.guide--secondary-title
+  width: 160px
+  height: 160px
+  background: $red
+  opacity: 0.5
+  margin: 6px 0 0 60px
+  @include transform(rotate(-45deg))
+  @include transform-origin(0, 100%)
+  z-index: 0
+
+p.guide--secondary-title
+  margin-left: 90%
+  z-index: 0
+
+#venue
+  h2
+    text-align: right
+    color: $red
+    margin-top: -156px
+    margin-right: 10px
+    text-transform: uppercase
