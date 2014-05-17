@@ -23,12 +23,12 @@
   @include grid(2, 2, 2, 2)
 
 .speakers--list-item-avatar
-  border: 5px $gray solid
-  border-radius: 50%
+  //border: 5px $gray solid
   display: block
   height: 100%
   margin-bottom: 10px
   width: 100%
+  -webkit-clip-path: polygon(50% 100%,100% 50%,50% 0,0 50%)
   -webkit-filter: sepia(100%) hue-rotate(45deg)
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.18 0.55 0.15 0 0 0.52 0.49 0.14 0 0 0.18 0.38 0.13 0 0 0 0 0 1 0\'/></filter></svg>#old-timey")
 
