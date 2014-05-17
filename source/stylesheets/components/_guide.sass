@@ -10,10 +10,10 @@
 .guide--title
   @extend %headline
   color: $dark-red
+  opacity: 0.8
 
 
 .guide--photo-container
-  background: $dark-gray
   display: block
   height: 0
   overflow: hidden
@@ -24,8 +24,13 @@
 .guide--photo
   width: 100%
   @include transform(translateY(-50%))
-
+  -webkit-clip-path: polygon(0% 0%,0% 100%,65% 100%,100% 65%, 100% 0%)
 
 .guide--show-more
   @extend %show-more
 
+.guide--show-more-image
+  @extend %show-more
+  background: none
+  &:hover
+    background: none
