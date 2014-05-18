@@ -46,10 +46,13 @@
   &:hover
     background: none
 
+// FIXME: remove ID usage for consistency
 #guide
   section
     @extend %pie-clearfix
-    h2
+
+    // FIXME: not sure why this breaks at top-level
+    .guide--section-title
       text-align: center
       height: 250px
       width: 250px
