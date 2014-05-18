@@ -42,24 +42,17 @@
   &:hover
     background: none
 
-.guide--secondary-title
-  width: 160px
-  height: 160px
-  background: $red
-  opacity: 0.5
-  margin: 6px 0 0 60px
-  @include transform(rotate(-45deg))
-  @include transform-origin(0, 100%)
-  z-index: 0
-
-p.guide--secondary-title
-  margin-left: 90%
-  z-index: 0
-
-#venue
-  h2
-    text-align: right
-    color: $red
-    margin-top: -156px
-    margin-right: 10px
-    text-transform: uppercase
+#guide
+  section
+    h2
+      text-align: right
+      height: 250px
+      width: 250px
+      background-image: inline-svg("h2guide.svg")
+      background-repeat: no
+      color: $white
+      text-transform: uppercase
+      margin: 0 0 0 auto
+      padding-top: 106px
+      padding-right: 15px
+      font-size: 24px
