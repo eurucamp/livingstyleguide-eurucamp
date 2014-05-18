@@ -1,16 +1,18 @@
-.guide
-  background: $light-green
-  display: block
-
-
 .guide--container
   @extend %container
-
 
 .guide--title
   @extend %headline
   color: $dark-red
   opacity: 0.8
+
+.guide--icon
+  background-image: inline-svg("guide_icon.svg")
+  width: 280px
+  height: 200px
+  display: block
+  opacity: 0.2
+  margin: -50px
 
 .guide--main-title
   @extend %headline
@@ -18,8 +20,10 @@
   color: $dark-red
   opacity: 0.7
   text-align: left
-  @include transform-origin(50px, 100px)
+  margin: -100px
+  @include transform-origin(50px, -50px)
   @include transform(rotate(-45deg))
+
 
 .guide--photo-container
   display: block
