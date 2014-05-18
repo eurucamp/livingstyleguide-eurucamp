@@ -44,6 +44,7 @@
 
 #guide
   section
+    @extend %pie-clearfix
     h2
       text-align: center
       height: 250px
@@ -55,3 +56,43 @@
       margin: 0 0 0 auto
       padding-top: 106px
       font-size: 24px
+      @media all and (max-width: 800px)
+        margin-bottom: 56px
+        opacity: 0.2
+        margin-top: 20px
+
+.guide--content-main-info
+  @include grid(4, 4, 6)
+  margin-top: -125px
+  img
+    width: 100%
+  h3
+    margin: 0
+
+.guide--content-whole-info
+  @include grid(8, 8, 6)
+  margin-top: -125px
+  img
+    width: 100%
+  h3
+    margin: 0
+
+
+.guide--content-image, .guide--content-additional-info
+  @include grid(4, 4, 6)
+  margin-top: -125px
+  img
+    width: 100%
+  h3
+    margin: 0
+  @media all and (max-width: 600px)
+    margin-top: 10px
+
+
+.guide--content-short
+  @include grid(4, false, false)
+  color: $fuchsia
+  text-align: center
+  margin-top: 15px
+  @media all and (max-width: 800px)
+    display: none
