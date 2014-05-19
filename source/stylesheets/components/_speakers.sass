@@ -20,32 +20,38 @@
 .speakers--list-item
   display: block
   margin-bottom: 20px
-  @include grid(2, false, 2, 2)
-
-
-.speakers--list-item-avatar
-  border: 5px $gray solid
-  border-radius: 50%
-  display: block
-  height: 100%
-  margin-bottom: 10px
-  width: 100%
-
-  [href]:hover &
-    border-color: $green
+  @include grid(3, false, 2, 2)
+  padding: 0
+  overflow: hidden
+  &:hover
+    background: $light-green
     cursor: pointer
+    overflow: visible
+    .speakers--twitter
+      display: block
 
+.speakers--twitter
+  position: absolute
+  display: none
+  margin-top: -153px
+  margin-left: 20px
+  color: $white
+  font-weight: bold
+  background: $fuchsia
+  opacity: 0.7
+  font-size: 18px
+  padding: 2px
 
 .speakers--list-item-name
-  background: $light-green
+  //background: $light-green
   color: $dark-gray
   display: block
   font-weight: bold
   padding: 5px
   text-align: center
   text-transform: uppercase
+  height: 50px
 
   [href]:hover &
     background: $green
     cursor: pointer
-
