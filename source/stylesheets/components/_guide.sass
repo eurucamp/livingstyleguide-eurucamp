@@ -46,12 +46,9 @@
   &:hover
     background: none
 
-// FIXME: remove ID usage for consistency
 #guide
   section
     @extend %pie-clearfix
-
-    // FIXME: not sure why this breaks at top-level
     .guide--section-title
       text-align: center
       height: 250px
@@ -101,5 +98,6 @@
   color: $fuchsia
   text-align: center
   margin-top: 15px
+  padding-left: 57px
   @media all and (max-width: 800px)
     display: none
