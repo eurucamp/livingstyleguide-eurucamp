@@ -20,15 +20,15 @@
 .speakers--list-item
   display: block
   margin-bottom: 20px
-  @include grid(3, false, 2, 2)
-  padding: 0
   overflow: hidden
+  padding: 0
+  @include grid(3, false, 2, 2)
+
   &:hover
     background: $light-green
     cursor: pointer
     overflow: visible
-    .speakers--twitter
-      display: block
+
 
 .speakers--twitter
   position: absolute
@@ -42,16 +42,21 @@
   font-size: 18px
   padding: 2px
 
+  .speakers--list-item:hover &
+  [href]:hover &
+    display: block
+
+
 .speakers--list-item-name
-  //background: $light-green
   color: $dark-gray
   display: block
+  height: 50px
   font-weight: bold
   padding: 5px
   text-align: center
   text-transform: uppercase
-  height: 50px
 
   [href]:hover &
     background: $green
     cursor: pointer
+

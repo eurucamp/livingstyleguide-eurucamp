@@ -1,10 +1,12 @@
 .guide--container
   @extend %container
 
+
 .guide--title
   @extend %headline
   color: $dark-red
   opacity: 0.8
+
 
 .guide--icon
   background-image: inline-svg("guide_icon.svg")
@@ -14,13 +16,14 @@
   opacity: 0.2
   margin: -50px
 
+
 .guide--main-title
   @extend %headline
-  font-size: 6rem
   color: $dark-red
+  font-size: 6rem
+  margin: -100px
   opacity: 0.7
   text-align: left
-  margin: -100px
   @include transform-origin(50px, -50px)
   @include transform(rotate(-45deg))
 
@@ -32,72 +35,100 @@
   padding: 25% 0
   position: relative
 
+
 .guide--photo
+  -webkit-clip-path: polygon(0% 0%,0% 100%,65% 100%,100% 65%, 100% 0%)
   width: 100%
   @include transform(translateY(-50%))
-  -webkit-clip-path: polygon(0% 0%,0% 100%,65% 100%,100% 65%, 100% 0%)
+
 
 .guide--show-more
   @extend %show-more
 
+
 .guide--show-more-image
   @extend %show-more
   background: none
+
   &:hover
     background: none
+
 
 #guide
   section
     @extend %pie-clearfix
+
     .guide--section-title
-      text-align: center
-      height: 250px
-      width: 250px
       background-image: inline-svg("h2guide.svg")
       background-repeat: no
       color: $white
-      text-transform: uppercase
+      font-size: 24px
+      height: 250px
       margin: 0 0 0 auto
       padding-top: 106px
-      font-size: 24px
+      text-align: center
+      text-transform: uppercase
+      width: 250px
       @media all and (max-width: 800px)
         margin-bottom: 56px
-        opacity: 0.2
         margin-top: 20px
+
+.guide--content-short
+  background-image: inline-svg("short-guide.svg")
+  background-repeat: no
+  background-size: 460px
+  font-size: 15px
+  height: 400px
+  text-align: center
+  color: $fuchsia
+  text-align: center
+  @include grid(12, false, false)
+  width: 400px
+  p
+    width: 240px
+    margin: 85px 0px 0px 0px
+    padding: 60px 5px 5px 65px
+  @media all and (max-width: 800px)
+    display: none
 
 .guide--content-main-info
   @include grid(4, 4, 6)
   margin-top: -125px
+
   img
     width: 100%
+
   h3
     margin: 0
+
 
 .guide--content-whole-info
   @include grid(8, 8, 6)
   margin-top: -125px
+
   img
     width: 100%
+
   h3
     margin: 0
 
+.guide--content-one-line
+  @include grid(12, 8, 6)
+  margin-top: -200px
 
-.guide--content-image, .guide--content-additional-info
-  @include grid(4, 4, 6)
+.guide--content-image,
+.guide--content-additional-info
   margin-top: -125px
-  img
-    width: 100%
-  h3
-    margin: 0
+  @include grid(4, 4, 6)
   @media all and (max-width: 600px)
     margin-top: 10px
 
+  img
+    width: 100%
 
-.guide--content-short
-  @include grid(4, false, false)
-  color: $fuchsia
-  text-align: center
-  margin-top: 15px
-  padding-left: 57px
-  @media all and (max-width: 800px)
-    display: none
+  h3
+    margin: 0
+
+.guide--arriving
+  .guide--content-main-info, .guide--content-additional-info
+    @include grid(6, 4, 6)
