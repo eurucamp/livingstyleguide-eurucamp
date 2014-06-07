@@ -13,6 +13,8 @@
 
 
 .team-page--members-item
+  margin-bottom: 1em
+  text-align: center
   @include grid(4, 4, 4 1, 4)
 
 
@@ -39,7 +41,6 @@
   line-height: 1.8rem
   margin: -20% auto 10%
   position: relative
-  text-align: center
   text-transform: uppercase
   width: 80%
 
@@ -56,6 +57,22 @@
 
 
 .team-page--members-item-position
-  display: block
-  text-align: center
+  @extend %display-block
+  @extend %text-transform-uppercase
+
+
+.team-page--members-item-link
+  background-size: 100%
+  display: inline-block
+  height: 1.5rem
+  margin: 0.5em
+  width: 1.5rem
+
+  @each $type in twitter github website email
+    &.-#{$type}
+      background-image: inline-svg("icons/#{$type}.svg")
+
+  &:hover
+    @include transform(translateZ(0))
+    @include filter(unquote("brightness(0.9)"))
 
