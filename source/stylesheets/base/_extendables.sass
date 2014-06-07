@@ -22,3 +22,26 @@
   &:hover
     background: rgba($dark-gray, 0.4)
 
+
+%page
+  display: block
+  min-height: 20rem
+  padding-top: 5rem
+
+
+%page--container
+  @extend %container
+  position: relative
+
+
+%page--title
+  font-size: 3rem
+  font-weight: bold
+  margin-left: -10%
+  position: absolute
+  text-transform: uppercase
+  @include transform(rotate(-45deg))
+  @media all and (max-width: 600px)
+    position: static
+    @include transform(rotate(0))
+
