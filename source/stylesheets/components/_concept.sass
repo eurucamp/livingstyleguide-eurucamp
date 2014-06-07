@@ -25,3 +25,13 @@
 .concept--show-more
   @extend %show-more
 
+.concept--formula-text
+  @extend %pie-clearfix
+  color: $green
+  font-size: 1.5rem
+  font-weight: bold
+  text-align: center
+  @include grid(12, 8, 6)
+  margin-top: 10px
+  @media all and (max-width: 800px)
+    font-size: 1rem
