@@ -28,3 +28,23 @@ Formula
 ~~~
 
 
+
+Previous
+--------
+
+~~~
+@haml
+@full-width
+.concept-page
+  ***.concept-page--previous***
+    ***.concept-page--previous-container***
+      %p***.concept-page--previous-title*** 2011
+      %p***.concept-page--previous-text*** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ullamcorper sem. Ut vestibulum vulputate nisl, id convallis velit blandit vel. Quisque non dignissim enim.
+      %p***.concept-page--previous-logo*** Logo
+  .concept-page--previous
+    .concept-page--previous-container***.-year-2012***
+      %p.concept-page--previous-title 2012
+      %p.concept-page--previous-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ullamcorper sem. Ut vestibulum vulputate nisl, id convallis velit blandit vel. Quisque non dignissim enim.
+      %p.concept-page--previous-logo Logo
+~~~
+

@@ -28,6 +28,8 @@
   @extend %page--section-paragraph
 
 
+//// FORMULA ////
+
 .concept-page--formula,
 .concept-page--formula-text
   @extend %page--section-paragraph
@@ -35,4 +37,34 @@
   font-size: 1.5rem
   font-weight: bold
   text-align: center
+
+
+//// PREVIOUS ////
+
+.concept-page--previous
+  background: $light-green
+  color: $black
+  display: block
+
+
+.concept-page--previous-container
+  @extend %container
+
+
+.concept-page--previous-title
+  @extend %page--section-title
+  color: $fuchsia
+  margin-top: 5%
+
+  &:before
+    background: $white
+
+
+.concept-page--previous-title,
+.concept-page--previous-text,
+.concept-page--previous-logo
+  @include grid(4, 8)
+
+  .-year-2012 &
+    float: right
 
