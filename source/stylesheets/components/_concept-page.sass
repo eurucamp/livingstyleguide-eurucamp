@@ -15,27 +15,37 @@
 .concept-page--section
   @extend %page--section
   margin-top: 200px
+  @media all and (max-width: 800px)
+    margin-top: 300px
 
 
 .concept-page--section-title
   @extend %page--section-title
   color: $dark-gray
+  margin-top: 200px
 
   &:before
     background: $light-green
 
+  @media all and (max-width: 800px)
+    color: $white
+    margin-top: 100px
+
 
 .concept-page--section-paragraph
   @extend %page--section-paragraph
-  font-size: 18px
+  font-size: 22px
 
 .concept-page--section-list
   @extend %page--section-paragraph
-  font-size: 18px
+  font-size: 22px
 
 .concept-page--section-item
   @extend %page--section-paragraph
-  font-size: 18px
+  font-size: 22px
+  list-style-type: square
+  &:before
+    content: "◆"
 
 //// FORMULA ////
 
@@ -44,9 +54,13 @@
   @extend %page--section-paragraph
   color: $light-green
   font-size: 1.5rem
-  font-weight: bold
   text-align: center
+  margin-left: 20%
+  text-align: right
 
+.concept-page--formula
+  margin-top: -100px
+  font-weight: bold
 
 //// PREVIOUS ////
 
@@ -59,6 +73,8 @@
 .concept-page--previous-container
   @extend %container
   margin-top: 100px
+  @media all and (max-width: 800px)
+    margin-top: 0px
 
 .concept-page--previous-title
   @extend %page--section-title
@@ -85,3 +101,5 @@
   img
     width: 100%
     padding: 0 30px 30px 30px
+    @media all and (max-width: 800px)
+      padding: 30px 70px 30px 70px

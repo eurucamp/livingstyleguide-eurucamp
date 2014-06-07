@@ -35,19 +35,13 @@
 
 
 %page--title
-  font-size: 3rem
+  font-size: 6rem
   font-weight: bold
+  opacity: 0.7
   margin-left: -10%
   position: absolute
   text-transform: uppercase
   @include transform(rotate(-45deg))
-  @media all and (max-width: 600px)
-    display: block
-    margin: 0 0 1em
-    position: static
-    text-align: center
-    @include transform(rotate(0))
-
 
 %page--section
   display: block
@@ -82,7 +76,8 @@
   @media all and (max-width: 800px)
     margin: 1em 0
     padding: 0
-
+    font-size: 2rem
+    text-align: left
     &:before
       display: none
 
@@ -91,4 +86,3 @@
   clear: both
   display: block
   margin: 1em 0
-
