@@ -42,7 +42,10 @@
   text-transform: uppercase
   @include transform(rotate(-45deg))
   @media all and (max-width: 600px)
+    display: block
+    margin: 0 0 1em
     position: static
+    text-align: center
     @include transform(rotate(0))
 
 
