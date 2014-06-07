@@ -76,3 +76,32 @@
     @include transform(translateZ(0))
     @include filter(unquote("brightness(0.9)"))
 
+
+.team-page--ruby-berlin-title
+  @extend %page--section-title
+  color: $fuchsia
+
+  &:before
+    background: $light-green
+
+
+.team-page--ruby-berlin-text
+  @include grid(12)
+
+
+.team-page--ruby-berlin-link
+  background: $fuchsia
+  color: white
+  cursor: pointer
+  display: inline-block
+  font-weight: bold
+  left: 50%
+  padding: 4px 15px 6px
+  position: relative
+  text-transform: uppercase
+  z-index: 10
+  @include transform(translateX(-50%))
+
+  &:hover
+    background: darken($fuchsia, 10%)
+

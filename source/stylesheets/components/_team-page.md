@@ -22,3 +22,19 @@ Members
         %a***.team-page--members-item-link.-email***(href)
 ~~~
 
+
+Ruby.Berlin
+-----------
+
+~~~
+@haml
+@full-width
+.team-page
+  .team-page--container
+    ***.team-page--ruby-berlin***
+      %h1***.team-page--ruby-berlin-title*** Ruby.Berlin
+      ***.team-page--ruby-berlin-text***
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ullamcorper sem. Ut vestibulum vulputate nisl, id convallis velit blandit vel. Quisque non dignissim enim.
+      %a***.team-page--ruby-berlin-link***(href) ruby.berlin
+~~~
+
