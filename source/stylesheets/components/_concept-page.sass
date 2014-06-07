@@ -18,7 +18,7 @@
 
 .concept-page--section-title
   @extend %page--section-title
-  color: $white
+  color: $dark-gray
 
   &:before
     background: $light-green
@@ -54,10 +54,12 @@
 .concept-page--previous-title
   @extend %page--section-title
   color: $fuchsia
+  font-size: 5rem
   margin-top: 5%
 
   &:before
     background: $white
+    @include transform(rotate(45deg) translateX(-47%) translateY(-47%))
 
 
 .concept-page--previous-title,
