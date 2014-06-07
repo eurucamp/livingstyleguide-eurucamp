@@ -14,6 +14,7 @@
 
 .concept-page--section
   @extend %page--section
+  margin-top: 200px
 
 
 .concept-page--section-title
@@ -26,7 +27,15 @@
 
 .concept-page--section-paragraph
   @extend %page--section-paragraph
+  font-size: 18px
 
+.concept-page--section-list
+  @extend %page--section-paragraph
+  font-size: 18px
+
+.concept-page--section-item
+  @extend %page--section-paragraph
+  font-size: 18px
 
 //// FORMULA ////
 
@@ -49,7 +58,7 @@
 
 .concept-page--previous-container
   @extend %container
-
+  margin-top: 100px
 
 .concept-page--previous-title
   @extend %page--section-title
@@ -61,6 +70,8 @@
     background: $white
     @include transform(rotate(45deg) translateX(-47%) translateY(-47%))
 
+.concept-page--previous-text
+  font-size: 18px
 
 .concept-page--previous-title,
 .concept-page--previous-text,
@@ -70,3 +81,6 @@
   .-year-2012 &
     float: right
 
+.concept-page--previous-logo
+  img
+    width: 100%
