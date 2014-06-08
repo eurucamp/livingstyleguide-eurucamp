@@ -12,6 +12,11 @@
   @extend %page--title
 
 
+.team-page--members
+  display: block
+  margin-top: 5rem
+
+
 .team-page--members-item
   margin-bottom: 1em
   text-align: center
@@ -19,6 +24,7 @@
 
 
 .team-page--members-item-photo
+  background: $gray
   display: block
   overflow: hidden
   @include transform(rotate(45deg) scale(0.72))
@@ -32,43 +38,51 @@
 
 
 .team-page--members-item-name
+  @extend %ellipsis
   background: $fuchsia
   color: $white
   display: block
-  font-size: 1.5rem
+  font-size: 1rem
   font-weight: bold
   height: 2rem
   line-height: 1.8rem
   margin: -20% auto 10%
+  overflow: visible
   position: relative
   text-transform: uppercase
   width: 80%
+  z-index: 2
+  @include transform(translateZ(0))
+  @include filter(drop-shadow(rgba(black, 0.3) 0 3px 0))
 
   &:before,
   &:after
     border: 1rem solid
     border-color: $fuchsia transparent
     content: ""
-    float: left
+    position: absolute
     margin: 0 -1rem
+    right: 0
+    z-index: -1
 
   &:after
-    float: right
+    left: 0
 
 
 .team-page--members-item-position
   @extend %display-block
   @extend %text-transform-uppercase
+  height: 1.4em
 
 
 .team-page--members-item-link
   background-size: 100%
   display: inline-block
   height: 1.5rem
-  margin: 0.5em
+  margin: 0.5em 0.1em
   width: 1.5rem
 
-  @each $type in twitter github website email
+  @each $type in twitter github dribbble website email
     &.-#{$type}
       background-image: inline-svg("icons/#{$type}.svg")
 

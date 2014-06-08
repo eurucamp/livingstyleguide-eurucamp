@@ -19,6 +19,7 @@ Members
           ***.team-page--members-item-position*** Offical Cat
           %a***.team-page--members-item-link.-twitter***(href)
           %a***.team-page--members-item-link.-github***(href)
+          %a***.team-page--members-item-link.-dribbble***(href)
           %a***.team-page--members-item-link.-website***(href)
           %a***.team-page--members-item-link.-email***(href)
 ~~~
