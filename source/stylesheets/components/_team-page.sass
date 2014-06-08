@@ -38,6 +38,7 @@
 
 
 .team-page--members-item-name
+  @extend %ellipsis
   background: $fuchsia
   color: $white
   display: block
@@ -46,20 +47,24 @@
   height: 2rem
   line-height: 1.8rem
   margin: -20% auto 10%
+  overflow: visible
   position: relative
   text-transform: uppercase
   width: 80%
+  z-index: 2
 
   &:before,
   &:after
     border: 1rem solid
     border-color: $fuchsia transparent
     content: ""
-    float: left
+    position: absolute
     margin: 0 -1rem
+    right: 0
+    z-index: -1
 
   &:after
-    float: right
+    left: 0
 
 
 .team-page--members-item-position
