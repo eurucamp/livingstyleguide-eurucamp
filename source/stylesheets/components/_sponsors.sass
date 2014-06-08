@@ -90,8 +90,9 @@
     @media all and (max-width: 800px)
       color: $white
       margin-top: 100px
-      margin-left: 200px
+      margin-left: 150px
       text-align: right
+      margin-bottom: -100px
   .sponsors--list
     @extend %pie-clearfix
 
@@ -133,3 +134,42 @@
 
   .sponsors--section-item-text
     display: none
+
+.sponsors-page--info
+  .sponsors--section
+    @extend %page--section
+  .sponsors--section-title
+    @extend %page--section-title
+    color: $white
+    margin-top: 200px
+    margin-left: 200px
+    margin-bottom: -200px
+    &:before
+      background: $fuchsia
+    @media all and (max-width: 800px)
+      color: $white
+      margin-top: 100px
+      margin-left: 150px
+      text-align: right
+
+.sponsors-page--info-text
+  @extend %pie-clearfix
+  @include grid(6, 4, 4)
+  margin-left: 33%
+  margin-top: 100px
+  font-size: 1.5rem
+  @media all and (max-width: 800px)
+    margin-top: 150px
+    margin-left: 10%
+
+.sponsors-page--buttons
+  @extend %pie-clearfix
+  @include grid(6, 4, 6)
+  margin-top: 50px
+  text-align: center
+
+.sponsors-page--show-more
+  @extend %show-more
+  background: $dark-red
+  &:hover
+    background: $red
