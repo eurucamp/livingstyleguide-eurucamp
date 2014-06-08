@@ -4,7 +4,8 @@
 
 .sponsors--container
   @extend %container
-  padding-bottom: 0
+  padding-bottom: 0px
+  margin-bottom: 0px
 
 
 .sponsors--title
@@ -29,8 +30,9 @@
   display: block
   background: $red
   color: $white
-  margin: 0 33% 0 33%
-  text-align: center
+  margin: -1% 33% 0 33%
+  text-align: right
+  padding-right: 1%
   font-weight: bold
   text-transform: uppercase
 
@@ -38,12 +40,89 @@
 
 .sponsors--list-item
   @include grid(4, 4, 6)
+  height: 350px
+  margin-top: 100px
+  margin-bottom: -250px
   img
-    width: 100%
+    max-width: 100%
     padding: 0 20px 0 20px
+    max-height: 60%
+    margin-top: -40%
 
 .sponsors--buttons
   @extend %pie-clearfix
 
 .sponsors--show-more
   @extend %show-more
+  background: $dark-red
+  &:hover
+    background: $red
+
+.sponsors.-home
+  padding-bottom: 50px
+
+.sponsors-page--title
+  @extend %page--title
+  font-size: 5rem
+  margin: 30px
+  @include transform-origin(100px, 250px)
+  @media all and (max-width: 600px)
+    font-size: 4rem
+    @include transform-origin(150px, 150px)
+    margin: 0
+
+.sponsors-page--companies
+  .sponsors--section
+    @extend %page--section
+
+  .sponsors--section-title
+    @extend %page--section-title
+    color: $white
+    margin-top: 200px
+    margin-left: 200px
+    margin-bottom: -200px
+    &:before
+      background: $light-green
+    @media all and (max-width: 800px)
+      color: $white
+      margin-top: 100px
+      margin-left: 200px
+      text-align: right
+  .sponsors--list
+    @extend %pie-clearfix
+
+  .sponsors--section.-lake
+    .sponsors--section-title:before
+      background-image: inline-svg("lake.svg")
+      background-repeat: no
+    .sponsors--list-item
+      @include grid(12, 8, 6)
+      height: 100px
+      margin-top: 25%
+      margin-bottom: -15%
+      img
+        width: 100%
+        padding: 0 10% 0 10%
+        max-height: 90%
+
+  .sponsors--section.-meadow
+    margin-top: 250px
+    margin-bottom: 200px
+    .sponsors--section-title:before
+      background-image: inline-svg("meadow.svg")
+      background-repeat: no
+    .sponsors--list-item
+      @include grid(12, 8, 6)
+      height: 80px
+      margin-top: 25%
+      margin-bottom: -15%
+      img
+        width: 100%
+        padding: 0 10% 0 10%
+        max-height: 90%
+
+
+
+
+  .sponsors--section-item-text
+    display: none
