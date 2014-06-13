@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
-You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
-
-
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -31,7 +25,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 	C216.622,426.174,180.425,412.608,151.562,390.067z M350.454,397.45c-7.521-40.384-18.543-79.878-32.956-118.399
 
-	c32.191-4.543,67.641-3.362,106.411,3.372C416.403,330.247,389.093,371.56,350.454,397.45z"/>
+	c32.191-4.543,67.641-3.362,106.411,3.372C416.403,330.247,389.093,371.56,350.454,397.45z" fill="$light-green"/>
 
 </svg>
 
