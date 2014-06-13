@@ -101,7 +101,21 @@
 
 .team-page--ruby-berlin-text
   @include grid(12)
+  padding-bottom: 20px
 
+.team-page--ruby-berlin-paragraph
+  @extend %page--section-paragraph
+  font-size: 18px
+
+.team-page--ruby-berlin-list
+  @extend %page--section-paragraph
+  font-size: 18px
+
+.team-page--ruby-berlin-item
+  @extend %page--section-paragraph
+  font-size: 18px
+  &:before
+    content: "◆"
 
 .team-page--ruby-berlin-link
   background: $fuchsia
@@ -118,4 +132,3 @@
 
   &:hover
     background: darken($fuchsia, 10%)
-
