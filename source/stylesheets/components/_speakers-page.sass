@@ -15,6 +15,68 @@
 
 
 .speakers-page--list
-  @include grid(8, 6, 6)
-  margin-left: 10%
-  margin-top: 50px
+  @include grid(9, 6, 6)
+  //margin-left: 10%
+  margin-top: 70px
+
+.speakers-page--photo
+  @include grid(5, 6, 6)
+  //margin-top: 48px
+
+.speakers-page--item-countries
+  position: relative
+  top: 180px
+
+.speakers-page--name
+  @extend %page--section-paragraph
+  text-align: center
+  font-size: 18px
+  font-weight: bold
+  margin-bottom: 0
+
+
+.speakers-page--item-info
+  @include grid(7, 6, 6)
+  font-size: 16px
+  margin-top: 48px
+  padding-left: 35px
+
+.speakers-page--navigation
+  @include grid(3, 6, 6)
+
+
+.speakers-page--item-info-talk-title
+  @extend %page--section-paragraph
+  font-size: 18px
+  font-weight: bold
+  padding-top: 18px
+
+.speakers-page--navigation
+  position: fixed
+  top: 100
+
+.speakers-page--navigation-item
+  @extend %display-block
+  @extend %text-transform-uppercase
+  height: 1.4em
+  margin-left: 10px
+
+.speakers-page--item-info-links
+  @extend %page--section-paragraph
+  text-align: center
+  margin: 0
+
+.speakers-page--item-info-links-item
+  background-size: 100%
+  display: inline-block
+  height: 1.5rem
+  margin: 0.5em 0.1em
+  width: 1.5rem
+
+  @each $type in twitter github dribbble website email
+    &.-#{$type}
+      background-image: inline-svg("icons/#{$type}.svg")
+
+  &:hover
+    @include transform(translateZ(0))
+    @include filter(unquote("brightness(0.9)"))
