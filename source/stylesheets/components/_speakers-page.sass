@@ -15,41 +15,51 @@
 
 
 .speakers-page--list
-  @include grid(9, 6, 6)
-  //margin-left: 10%
-  margin-top: 70px
+  @include grid(9, 8, 6)
+  margin-top: 100px
+  @media all and (max-width: 800px)
+    margin-top: 0
+
+
+.speakers-page--navigation
+  @include grid(3, 6, 6)
+
 
 .speakers-page--photo
-  @include grid(5, 6, 6)
-  //margin-top: 48px
-
-.speakers-page--item-countries
-  position: relative
-  top: 180px
-
-.speakers-page--name
-  @extend %page--section-paragraph
+  @include grid(5, 8, 6)
   text-align: center
-  font-size: 18px
-  font-weight: bold
-  margin-bottom: 0
+  position: relative
+  @media all and (max-width: 800px)
+    padding-top: 120px
 
 
 .speakers-page--item-info
-  @include grid(7, 6, 6)
+  @include grid(7, 8, 6)
   font-size: 16px
   margin-top: 48px
   padding-left: 35px
 
-.speakers-page--navigation
-  @include grid(3, 6, 6)
+
+.speakers-page--item-countries
+  position: absolute
+  top: 140px
+  @media all and (max-width: 800px)
+    top: 260px
+
+
+.speakers-page--name
+  @extend %page--section-paragraph
+  //text-align: center
+  font-size: 18px
+  font-weight: bold
+  margin-bottom: 0
 
 
 .speakers-page--item-info-talk-title
   @extend %page--section-paragraph
   font-size: 18px
   font-weight: bold
-  padding-top: 18px
+  margin-bottom: 0
 
 .speakers-page--navigation
   position: fixed
@@ -63,7 +73,7 @@
 
 .speakers-page--item-info-links
   @extend %page--section-paragraph
-  text-align: center
+  //text-align: center
   margin: 0
 
 .speakers-page--item-info-links-item
