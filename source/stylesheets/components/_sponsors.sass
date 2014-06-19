@@ -28,10 +28,11 @@
   font-weight: bold
   color: $red
 
-
 .sponsors--list
   display: block
   margin-top: 100px
+  @media all and (max-width: 800px)
+    margin-top: 100px
 
 .sponsors--list-item-label
   display: block
@@ -48,6 +49,8 @@
   @include grid(4, 4, 6)
   margin-top: 0px
   margin-bottom: 0px
+  height: 150px
+  max-width: 350px
   img
     max-width: 100%
     max-height: 100%
@@ -91,11 +94,11 @@
     &:before
       background: $white
     @media all and (max-width: 800px)
-      color: $white
+      color: $black
       margin-top: 100px
-      margin-left: 150px
-      text-align: right
-      margin-bottom: -100px
+      margin-left: 0px
+      text-align: left
+      margin-bottom: -50px
   .sponsors--list
     @extend %pie-clearfix
 
@@ -103,8 +106,17 @@
     .sponsors--section-title:before
       background-image: inline-svg("lake.svg")
       background-repeat: no
+    .sponsors--section-title
+      @media all and (max-width: 800px)
+        margin-top: 300px
+        margin-bottom: 10px
+      @media all and (max-width: 600px)
+        margin-top: 150px
+
     .sponsors--list-item
       @include grid(12, 8, 6)
+      height: 100%
+      max-width: 100%
       margin-top: 100px
       margin-bottom: 0
       img
@@ -117,6 +129,9 @@
       @include grid(7, 4, 6)
     .sponsors--section-item-text
       @include grid(5, 4, 6)
+      @media all and (max-width: 600px)
+        padding: 30px 10% 30px 10%
+        font-size: 18px
 
   .sponsors--section.-meadow
     margin-top: 0px
@@ -124,8 +139,13 @@
     .sponsors--section-title:before
       background-image: inline-svg("meadow.svg")
       background-repeat: no
+    .sponsors--section-title
+      @media all and (max-width: 800px)
+        margin-bottom: 10px
     .sponsors--list-item
       @include grid(12, 8, 6)
+      height: 100%
+      max-width: 100%
       margin-top: 100px
       margin-bottom: 0
       img
@@ -140,7 +160,7 @@
       display: none
 
 .sponsors--section-item-text
-  font-size: 16px
+  font-size: 17px
   a
     color: $red
 
@@ -157,10 +177,13 @@
     &:before
       background: $fuchsia
     @media all and (max-width: 800px)
-      color: $white
+      color: $black
       margin-top: 100px
-      margin-left: 150px
-      text-align: right
+      margin-left: 0px
+      text-align: left
+      margin-bottom: 50px
+    @media all and (max-width: 600px)
+      margin-bottom: -50px
 
 .sponsors-page--info-text
   @extend %pie-clearfix
