@@ -142,12 +142,14 @@
     .sponsors--section-title
       @media all and (max-width: 800px)
         margin-bottom: 10px
-    .sponsors--list-item
+    .sponsors--list
       @include grid(12, 8, 6)
+    .sponsors--list-item
+      @include grid(4, 4, 6)
       height: 100%
       max-width: 100%
       margin-top: 100px
-      margin-bottom: 0
+      margin-bottom: 100px
       img
         max-height: 100%
         padding: 0 10% 0 10%
@@ -155,7 +157,7 @@
         margin-top: 100px
         margin-bottom: 0
     .sponsors--list-item-name
-      @include grid(4, 4, 6)
+      //@include grid(12, 8, 6)
     .sponsors--section-item-text
       display: none
 
