@@ -17,6 +17,10 @@
 .podcast-page--episodes-container
   @extend %container
 
+  ul
+    display: block
+    margin: 0 0 0.75em
+
 
 .podcast-page--episodes-title
   @extend %page--section-title
@@ -30,9 +34,6 @@
   @include grid(4, 4, 6)
 
   ul
-    display: block
-    margin: 0 0 0.75em
-
     li
       display: block
       margin: 0 0 0.25em 3em
@@ -48,6 +49,39 @@
 .podcast-page--episodes-current
   @include grid(8, 8, 6)
 
+  table
+    display: table
+
+  thead
+    display: block
+
+  tbody
+    display: table-row-group
+
+  tr
+    display: table-row
+
+  th, td
+    display: table-cell
+
+  article
+    time#pubdate
+      &:after
+        content: " | "
+
+    h2
+      span#title
+        font-weight: bold
+
+  .podlovewebplayer_wrapper
+    margin: 10px 0
+
+  #download-links
+    color: $gray
+    margin-bottom: 5px
+    display: block
+    width: auto
+    text-align: right
 
 .podcast-page--hosts
   background: $black
