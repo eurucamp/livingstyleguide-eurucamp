@@ -38,14 +38,16 @@
   display: block
   background: $red
   color: $white
-  margin: -1% 33% 0 33%
+  opacity: 1
+  margin: -1% 80% 0 80%
   text-align: right
   padding-right: 1%
   padding-top: 3px
-  margin-top: -5px
+  margin-top: -30%
+  margin-left: -10%
   font-weight: bold
   text-transform: uppercase
-
+  @include transform(rotate(-90deg))
 
 .sponsors--list-item
   @include grid(4, 4, 6)
