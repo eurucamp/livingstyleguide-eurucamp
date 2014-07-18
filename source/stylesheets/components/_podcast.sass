@@ -1,11 +1,13 @@
 .podcast-page--intro
   @extend %container
 
-  p
-    @extend %page--section-paragraph
 
 .podcast-page--title
   @extend %headline
+
+
+.podcast-page--intro-text.text
+  margin-bottom: 10px
 
 
 .podcast-page--episodes
@@ -17,9 +19,10 @@
 .podcast-page--episodes-container
   @extend %container
 
-  ul
-    display: block
-    margin: 0 0 0.75em
+
+.podcast-page--episodes-list
+  display: block
+  margin: 0 0 0.75em
 
 
 .podcast-page--episodes-title
@@ -30,24 +33,38 @@
     background: $light-green
 
 
-.podcast-page--episodes-list
+.podcast-page--episodes-sidebar
   @include grid(4, 4, 6)
 
-  ul
-    li
-      display: block
-      margin: 0 0 0.25em 3em
-      position: relative
 
-      &:before
-        color: $green
-        content: "–"
-        position: absolute
-        right: 102%
+.podcast-page--episodes-list-item
+  display: block
+  margin: 0 0 0.25em 3em
+  position: relative
+
+  &:before
+    color: $green
+    content: "–"
+    position: absolute
+    right: 102%
 
 
-.podcast-page--episodes-current
+.podcast-page--current-episode
   @include grid(8, 8, 6)
+
+
+.podcast-page--current-episode-pubdate
+  &:after
+    content: " | "
+
+
+.podcast-page--current-episode-title
+  font-weight: bold
+
+
+// This is provided by the podlove web player, thus we cannot change that
+.podlovewebplayer_wrapper
+  margin: 10px 0
 
   table
     display: table
@@ -64,24 +81,14 @@
   th, td
     display: table-cell
 
-  article
-    time#pubdate
-      &:after
-        content: " | "
 
-    h2
-      span#title
-        font-weight: bold
+.podcast-page--current-episode-download-links
+  color: $gray
+  margin-bottom: 5px
+  display: block
+  width: auto
+  text-align: right
 
-  .podlovewebplayer_wrapper
-    margin: 10px 0
-
-  #download-links
-    color: $gray
-    margin-bottom: 5px
-    display: block
-    width: auto
-    text-align: right
 
 .podcast-page--hosts
   background: $black
