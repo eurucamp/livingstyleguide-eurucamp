@@ -107,7 +107,39 @@
   .sponsors--list
     @extend %pie-clearfix
 
+  .sponsors--section.-forest
+    .sponsors--section-title:before
+      background-image: inline-svg("forest.svg")
+      background-repeat: no
+    .sponsors--section-title
+      @media all and (max-width: 800px)
+        margin-top: 300px
+        margin-bottom: 10px
+      @media all and (max-width: 600px)
+        margin-top: 150px
+
+    .sponsors--list-item
+      @include grid(12, 8, 6)
+      height: 100%
+      max-width: 100%
+      margin-top: 100px
+      margin-bottom: 0
+      img
+        max-height: 100%
+        padding: 0 10% 0 10%
+      @media all and (max-width: 800px)
+        margin-top: 100px
+        margin-bottom: 0
+    .sponsors--list-item-name
+      @include grid(8, 4, 6)
+    .sponsors--section-item-text
+      @include grid(4, 4, 6)
+      @media all and (max-width: 600px)
+        padding: 30px 10% 30px 10%
+        font-size: 18px
+
   .sponsors--section.-lake
+    margin-top: -100px
     .sponsors--section-title:before
       background-image: inline-svg("lake.svg")
       background-repeat: no
@@ -131,15 +163,15 @@
         margin-top: 100px
         margin-bottom: 0
     .sponsors--list-item-name
-      @include grid(7, 4, 6)
+      @include grid(6, 4, 6)
     .sponsors--section-item-text
-      @include grid(5, 4, 6)
+      @include grid(6, 4, 6)
       @media all and (max-width: 600px)
         padding: 30px 10% 30px 10%
         font-size: 18px
 
   .sponsors--section.-meadow
-    margin-top: 0px
+    margin-top: 150px
     margin-bottom: 100px
     .sponsors--section-title:before
       background-image: inline-svg("meadow.svg")
