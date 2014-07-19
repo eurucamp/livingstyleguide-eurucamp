@@ -12,6 +12,8 @@
 
 // temporary styles added by jojo
 #schedule
+  $slot-sizes: 15 30 45
+
   font-size: 20px
   h2
     display: block
@@ -20,19 +22,29 @@
   table
     display: table
     width: 100%
+    border-collapse: separate
+    border-spacing:  5px
+
   thead
     display: table-header-group
   tbody
     display: table-row-group
   tr
     display: table-row
+
   th, td
     display: table-cell
     text-align: center
-    padding: 10px
-    border: 10px solid $fuchsia
+
+    @each $slot-size in $slot-sizes
+      &.-s-#{$slot-size}m
+        height: #{($slot-size * 4)}px
+    &.-s-270m
+      height: 240px
+
   td
     background: $white
+
   .title
     margin-top: 20px
     a
@@ -52,13 +64,17 @@
   .time
     width: 10%
     text-align: right
+    vertical-align: top
     background: none
     color: $white
     font-size: 24px
+    border-top: 1px solid $white
+
   .single
     width: 45%
   .double
     width: 90%
+
   span.title
     display: block
   .break
