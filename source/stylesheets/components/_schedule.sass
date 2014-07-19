@@ -12,6 +12,7 @@
 
 // temporary styles added by jojo
 #schedule
+  font-size: 24px
   h2
     display: block
     color: $light-green
@@ -33,150 +34,44 @@
   td
     background: $white
   .title
+    margin-top: 6%
     a
       color: $fuchsia
+      padding: 4px
+    a:hover
+      background: $fuchsia
+      color: $white
+      text-decoration: none
+  .speaker
+    text-transform: uppercase
+    font-size: 18px
 
   th
     font-weight: bold
+    color: $white
   .time
     width: 10%
     text-align: right
+    background: none
+    color: $white
+    font-size: 24px
   .single
     width: 45%
   .double
     width: 90%
   span.title
     display: block
-
-// everything below this line is just copied from _guide.sass
-
-.schedule--icon
-  background-image: inline-svg("guide_icon.svg")
-  width: 280px
-  height: 200px
-  display: block
-  opacity: 0.2
-  margin: -50px
+  .break
+    background: $fuchsia
+  @media all and (max-width: 600px)
+    p
+      font-size: 20px
+    .time
+      font-size: 20px
 
 
 .schedule--main-title
   @extend %page--title
   color: $dark-red
-  margin: -100px
-  @include transform-origin(50px, -50px)
-
-
-.schedule--photo-container
-  display: block
-  height: 0
-  overflow: hidden
-  padding: 25% 0
-  position: relative
-
-
-.schedule--photo
-  -webkit-clip-path: polygon(0% 0%,0% 100%,65% 100%,100% 65%, 100% 0%)
-  width: 100%
-  @include transform(translateY(-50%))
-
-
-.schedule--show-more
-  @extend %show-more
-
-
-.schedule--show-more-image
-  @extend %show-more
-  background: none
-
-  &:hover
-    background: none
-
-
-#schedule
-  section
-    @extend %pie-clearfix
-
-    .schedule--section-title
-      background-image: inline-svg("h2guide.svg")
-      background-repeat: no
-      color: $white
-      font-size: 24px
-      height: 250px
-      margin: 0 0 0 auto
-      padding-top: 106px
-      text-align: center
-      text-transform: uppercase
-      width: 250px
-      @media all and (max-width: 800px)
-        margin-bottom: 56px
-        margin-top: 20px
-
-
-.schedule--content-short
-  background-image: inline-svg("short-guide.svg")
-  background-repeat: no
-  background-size: 460px
-  color: $fuchsia
-  font-size: 15px
-  height: 400px
-  text-align: center
-  width: 400px !important
-  @include grid(12, false, false)
-  @media all and (max-width: 800px)
-    display: none
-
-  p
-    margin: 85px 0px 0px 0px
-    padding: 60px 5px 5px 65px
-    width: 240px
-
-
-.schedule--content-main-info
-  margin-top: -125px
-  @include grid(4, 4, 6)
-
-  img
-    width: 100%
-
-  h3
-    margin: 0
-
-
-.schedule--content-whole-info
-  margin-top: -125px
-  @include grid(8, 8, 6)
-
-  img
-    width: 100%
-
-  h3
-    margin: 0
-
-
-.schedule--content-one-line
-  @include grid(12, 8, 6)
-  margin-top: -200px
-
-
-.schedule--content-image,
-.schedule--content-additional-info
-  margin-top: -125px
-  @include grid(4, 4, 6)
-  @media all and (max-width: 600px)
-    margin-top: 10px
-
-  img
-    width: 100%
-
-  h3
-    margin: 0
-
-
-.schedule--arriving
-  .schedule--content-main-info,
-  .schedule--content-additional-info
-    @include grid(6, 4, 6)
-
-
-.schedule--staying-camping
-  @include grid(8, 6, 6)
+  margin: 100px
+  @include transform-origin(-50px, 200px)
