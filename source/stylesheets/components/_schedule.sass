@@ -1,5 +1,5 @@
 .schedule
-  background: $light-gray
+  background: $fuchsia
   display: block
 
 .schedule--container
@@ -14,6 +14,8 @@
 #schedule
   h2
     display: block
+    color: $light-green
+    margin-top: 100px
   table
     display: table
     width: 100%
@@ -26,10 +28,25 @@
   th, td
     display: table-cell
     text-align: center
+    padding: 10px
+    border: 10px solid $fuchsia
+  td
+    background: $white
+  .title
+    a
+      color: $fuchsia
+
   th
     font-weight: bold
-  td.time
+  .time
+    width: 10%
     text-align: right
+  .single
+    width: 45%
+  .double
+    width: 90%
+  span.title
+    display: block
 
 // everything below this line is just copied from _guide.sass
 
