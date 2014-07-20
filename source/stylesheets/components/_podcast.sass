@@ -1,0 +1,175 @@
+.podcast-page--intro
+  @extend %container
+
+
+.podcast-page--title
+  @extend %headline
+
+
+.podcast-page--intro-text.text
+  margin-bottom: 10px
+
+
+.podcast-page--episodes
+  background: $dark-red
+  color: $white
+  display: block
+
+
+.podcast-page--episodes-container
+  @extend %container
+
+
+.podcast-page--episodes-list
+  display: block
+  margin: 0 0 0.75em
+
+
+.podcast-page--episodes-title
+  @extend %page--section-title
+  color: $fuchsia
+
+  &:before
+    background: $light-green
+
+
+.podcast-page--episodes-sidebar
+  @include grid(4, 4, 6)
+
+
+.podcast-page--episodes-list-item
+  display: block
+  margin: 0 0 0.25em 3em
+  position: relative
+
+  &:before
+    color: $green
+    content: "–"
+    position: absolute
+    right: 102%
+
+
+.podcast-page--current-episode
+  @include grid(8, 8, 6)
+
+
+.podcast-page--current-episode-pubdate
+  &:after
+    content: " | "
+
+
+.podcast-page--current-episode-title
+  font-weight: bold
+
+
+// This is provided by the podlove web player, thus we cannot change that
+.podlovewebplayer_wrapper
+  margin: 10px 0
+
+  table
+    display: table
+
+  thead
+    display: block
+
+  tbody
+    display: table-row-group
+
+  tr
+    display: table-row
+
+  th, td
+    display: table-cell
+
+
+.podcast-page--current-episode-download-links
+  color: $gray
+  margin-bottom: 5px
+  display: block
+  width: auto
+  text-align: right
+
+
+.podcast-page--hosts
+  background: $black
+  color: $white
+  display: block
+  padding-top: 20px
+
+
+.podcast-page--hosts-container
+  @extend %container
+
+
+.podcast-page--hosts-title
+  @extend %page--title
+
+
+.podcast-page--hosts-members
+  display: block
+  margin-top: 5rem
+
+
+.podcast-page--host-item
+  margin-bottom: 1em
+  text-align: center
+  @include grid(4, 4, 4 1, 4)
+
+
+.podcast-page--host-item-photo
+  background: $gray
+  display: block
+  overflow: hidden
+  @include transform(rotate(45deg) scale(0.72))
+
+
+.podcast-page--host-item-photo-image
+  display: block
+  width: 100%
+  @include transform(rotate(-45deg) scale(1.5))
+  @include filter(grayscale(100%))
+
+
+.podcast-page--host-item-name
+  @extend %ellipsis
+  background: $fuchsia
+  color: $white
+  display: block
+  font-size: 1rem
+  font-weight: bold
+  height: 2rem
+  line-height: 1.8rem
+  margin: -20% auto 10%
+  overflow: visible
+  position: relative
+  text-transform: uppercase
+  width: 80%
+  z-index: 2
+  @include transform(translateZ(0))
+  @include filter(drop-shadow(rgba(black, 0.3) 0 3px 0))
+
+  &:before,
+  &:after
+    border: 1rem solid
+    border-color: $fuchsia transparent
+    content: ""
+    position: absolute
+    margin: 0 -1rem
+    right: 0
+    z-index: -1
+
+  &:after
+    left: 0
+
+.podcast-page--host-item-url
+  background-size: 100%
+  display: block
+  height: 1.5rem
+  margin: auto
+  margin-top: 0.5em
+  font-weight: bold
+
+  &:hover
+    @include transform(translateZ(0))
+    @include filter(unquote("brightness(0.9)"))
+
