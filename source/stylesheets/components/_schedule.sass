@@ -1,6 +1,8 @@
 .schedule
   background: $fuchsia
   display: block
+  p
+    font-size: 20px
 
 .schedule--container
   @extend %container
@@ -13,7 +15,7 @@
 .schedule--main-title
   @extend %page--title
   color: $dark-red
-  margin: 100px
+  margin: 80px
   @include transform-origin(100px, 250px)
   pointer-events: none
 
@@ -32,11 +34,13 @@
   font-size: 1.25rem
   text-align: left
   margin-top: 20px
+  margin-left: 12%
 
 .schedule--day-extra-info
   @extend %page--section-paragraph
   color: $white
   font-size: 1rem
+  margin-left: 12%
 
   a:link
     text-decoration: underline
