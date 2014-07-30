@@ -55,7 +55,9 @@
 
 
 .layout--footer-container
-  @extend .layout--header-container
+  //@extend .layout--header-container
+  @include grid(12, 8, 6)
+  text-align: center
 
 
 .layout--footer-navigation
@@ -71,24 +73,22 @@
   float: left
   font-weight: 600
   text-transform: uppercase
-  margin-right: 20px
   text-transform: none
-
+  padding-bottom: 20px
 
 .layout--footer-navigation,
 .layout--footer-navigation-item,
 .layout--footer-text
-  @media all and (max-width: 900px)
-    float: none
-    margin: 0 10px
+  float: none
+  margin: 0 10px
 
 
 .layout--footer-navigation,
 .layout--footer-text
-  @media all and (max-width: 900px)
-    display: block
-    margin: 5px 0
-    text-align: center
+  @include grid(12, 8, 6)
+  display: block
+  margin: 5px 0
+  text-align: center
 
 .layout--footer-social-icons
   @extend %page--section-paragraph
