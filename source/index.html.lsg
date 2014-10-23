@@ -46,14 +46,11 @@ styleguide-sass: |
     margin-top: 220px
     width: 100%
 
-  .cover
-    background-image: url("images/grass.jpg")
-
   .livingstyleguide > .cover > .cover--container
     height: 350px
 
   .livingstyleguide--intro
-    background: #FFB2D2
+    background: $light-green
     display: block
     padding: 50px 0
 
@@ -61,10 +58,10 @@ styleguide-sass: |
       font-size: 20px
 
     a
-      color: $white//light-green
+      color: $red
 
       &:hover
-        color: darken($light-green, 10%)
+        color: darken($dark-red, 10%)
 
 
 
