@@ -1,6 +1,6 @@
 # Base setup:
 source: stylesheets/eurucamp.css.sass
-title: "Living Style Guide for the eurucamp 2014"
+title: "Living Style Guide for the eurucamp 2015"
 
 
 
@@ -73,6 +73,6 @@ header: |
     </div>
   </div>
   <div class="livingstyleguide--intro">
-    <p class="livingstyleguide--paragraph">Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2014.eurucamp.org/">2014.eurucamp.org</a> are definend and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.</p>
+    <p class="livingstyleguide--paragraph">Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2015.eurucamp.org/">2015.eurucamp.org</a> are definend and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.</p>
   </div>
 
