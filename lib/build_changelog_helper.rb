@@ -5,7 +5,7 @@ class BuildChangelogHelper
   GIT_CMD = "git log -30 --no-merges --pretty=format:'#{GIT_FORMAT}'"
 
   TEMPLATE = <<-EOT
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head><meta charset="utf-8"><title>eurucamp living style guide</title></head>
   <body>
