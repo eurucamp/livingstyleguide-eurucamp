@@ -4,6 +4,13 @@ class BuildChangelogHelper
 
   GIT_CMD = "git log -30 --no-merges --pretty=format:'#{GIT_FORMAT}'"
 
+  ROBOTS_TXT = <<-EOT
+User-agent: *
+Allow: /latest
+Allow: /index.html
+Disallow: /
+EOT
+
   TEMPLATE = <<-EOT
 <!DOCTYPE html>
 <html lang="en">
@@ -35,5 +42,6 @@ EOT
     @log_lines = %x{#{GIT_CMD}}.lines
     output = ERB.new(TEMPLATE).result(binding)
     File.write('build/index.html', output)
+    File.write('build/robots.txt', ROBOTS_TXT)
   end
 end
