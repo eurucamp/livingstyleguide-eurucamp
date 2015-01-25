@@ -1,3 +1,4 @@
+require 'lib/build_changelog'
 ###
 # Compass
 ###
@@ -52,6 +53,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :relative_assets
+
+activate :build_changelog
 
 # Build-specific configuration
 configure :build do

@@ -1,7 +1,7 @@
 eurucamp’s Living Style Guide
 =============================
 
-Live version: <http://livingstyleguide.com/eurucamp/>
+Live version: <http://style-guide.eurucamp.org/latest>
 
 
 Run locally
@@ -16,22 +16,20 @@ bundle exec middleman
 
 Open <http://localhost:4567/> in your browser.
 
-Deployment to S3
-----------------
+Deployment
+----------
 
-### Setup
+Every commit on the branch `master` is automatically deployed and and pushed to <http://style-guide.eurucamp.org/latest>. A list of older artefacts is available at <http://style-guide.eurucamp.org>.
 
-Copy the sample S3 configuration file:
+#### Manual deployment to S3
 
-     cp .s3_sync.sample .s3_sync
+* Copy the sample S3 configuration file and fill in the correct credentials:
 
-and add your AWS credentials.
+     `cp .s3_sync.sample .s3_sync`
 
-### Deploys
+* Build and deploy the site:
 
-To deploy the site:
-
-    bundle exec middleman build && bundle exec middleman s3_sync
+    `bundle exec middleman build && bundle exec middleman s3_sync`
 
 ## Logo
 
