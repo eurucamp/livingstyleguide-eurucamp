@@ -1,4 +1,6 @@
 require 'fileutils'
+require 'json'
+require 'open-uri'
 require_relative 'build_changelog_helper'
 
 class BuildChangelog < Middleman::Extension
@@ -9,8 +11,18 @@ class BuildChangelog < Middleman::Extension
     app.after_build do |builder|
       latest = 'build/latest'
       builder.remove_dir latest
-      FileUtils.cp_r(build_dir, latest)
-      changelog_helper.build_index
+      info = JSON.parse(File.read("#{build_dir}/info.json"))
+      begin
+        builds = JSON.parse(open("http://style-guide.eurucamp.org/builds.json").read)
+      rescue OpenURI::HTTPError
+        builds = []
+      end
+      builds << info
+      File.open("build/builds.json", "w") do |file|
+        file.write builds.to_json
+      end
+      FileUtils.cp_r(build_dir, "build/#{info["branch"]}")
+      changelog_helper.build_index_for builds
     end
 
     app.after_configuration do

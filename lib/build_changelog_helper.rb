@@ -1,8 +1,4 @@
 class BuildChangelogHelper
-  # Format of each commit line (see `git help log`)
-  GIT_FORMAT = '<dt><a href="%h">%h</a></dt><dd><strong>%s</strong><br/>by %an, <em>%ai</em></dd>'
-
-  GIT_CMD = "git log -30 --no-merges --pretty=format:'#{GIT_FORMAT}'"
 
   ROBOTS_TXT = <<-EOT
 User-agent: *
@@ -17,13 +13,15 @@ EOT
   <head><meta charset="utf-8"><title>eurucamp living style guide</title></head>
   <body>
     <h2><a href="https://github.com/eurucamp/livingstyleguide-eurucamp/">eurucamp/livingstyleguide-eurucamp</a></h2>
-    <p>
-    <a href="latest">Latest deploy (<%= head %>)</a>:
-    <pre><%= latest_commit %></pre>
-    </p>
+    <ul>
+      <% for year in builds.map { |b| b["branch"] }.uniq.sort.reverse %>
+        <li><a href="<%= year %>/">Latest version for <%= year %></a></li>
+      <% end %>
+    </ul>
     <dl>
-      <% for @log_line in @log_lines %>
-      <%= @log_line.strip %>
+      <% for build in builds.reverse %>
+        <dt><a href="<%= build["commit"] %>/"><strong><%= build["branch"] %>:</strong> <%= build["commit"] %></a></dt>
+        <dd><strong><%= build["message"] %></strong><br><%= build["author"] %> (<%= build["time"] %>)</dd>
       <% end %>
     </dl>
   </body>
@@ -38,8 +36,7 @@ EOT
     %x{git show --pretty=full --name-status HEAD}.strip
   end
 
-  def build_index
-    @log_lines = %x{#{GIT_CMD}}.lines
+  def build_index_for(builds)
     output = ERB.new(TEMPLATE).result(binding)
     File.write('build/index.html', output)
     File.write('build/robots.txt', ROBOTS_TXT)
