@@ -1,0 +1,15 @@
+<%
+  branch = `git symbolic-ref --short HEAD`.strip
+  commit = `git log -1 --pretty=%h`.strip
+  unless branch =~ /^\d\d\d\d$/
+    /#{commit}.+?refs\/heads\/(\d+)/ =~ `git for-each-ref --sort=-committerdate refs/heads/`.strip
+    branch = $1
+  end
+%>
+{
+  "branch": "<%= branch %>",
+  "commit": "<%= commit %>",
+  "message": "<%= `git log -1 --pretty=%B`.split("\n").first.strip %>",
+  "author": "<%= `git log -1 --pretty=%an`.strip %>",
+  "time": "<%= `git log -1 --pretty=%ad`.strip %>"
+}
