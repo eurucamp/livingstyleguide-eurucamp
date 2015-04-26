@@ -3,19 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>eurucamp style guides</title>
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
-    <h2><a href="https://github.com/eurucamp/livingstyleguide-eurucamp/">eurucamp/livingstyleguide-eurucamp</a></h2>
-    <ul>
-      <% for year in years.sort.reverse %>
-        <li><a href="<%= year %>/">Latest version for <%= year %></a></li>
-      <% end %>
-    </ul>
-    <dl>
-      <% for build in builds.reverse %>
-        <dt><a href="<%= build["commit"] %>/"><strong><%= build["branch"] %>:</strong> <%= build["commit"] %></a></dt>
-        <dd><strong><%= build["message"] %></strong><br><%= build["author"] %> (<%= build["time"] %>)</dd>
-      <% end %>
-    </dl>
+    <section class="intro">
+      <h1>eurucamp style guides</h1>
+      <p>
+        Each year has it’s own style guide, each commit gets deployed here.
+        All our applications (<a href="http://<%= years.sort.reverse.first %>.eurucamp.org">website</a>, <a href="https://cfp.eurucamp.org">CFP app</a>, <a href="http://blog.eurucamp.org">blog</a>, <a href="http://activities.eurucamp.org">activities</a>, <a href="http://media.eurucamp.org">videos</a>) link their CSS here to a specific commit.
+      </p>
+      <h2>View latest version for:</h2>
+      <ul>
+        <% for year in years.sort.reverse %>
+          <li>
+            <h3><a href="<%= year %>/"> <%= year %></a></h3>
+            (<a href="https://github.com/eurucamp/livingstyleguide-eurucamp/tree/<%= year %>">Show source on GitHub</a>)
+          </li>
+        <% end %>
+      </ul>
+    </section>
+    <section class="builds">
+      <dl>
+        <% for build in builds.reverse %>
+          <dt><a href="<%= build["commit"] %>/"><strong><%= build["branch"] %>:</strong> <%= build["commit"] %></a></dt>
+          <dd><strong><%= build["message"] %></strong><br><%= build["author"] %> (<%= build["time"] %>)</dd>
+        <% end %>
+      </dl>
+    </section>
   </body>
 </html>
