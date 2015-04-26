@@ -18,9 +18,6 @@ class BuildChangelog < Middleman::Extension
         builds = []
       end
       builds << info
-      File.open("build/builds.json", "w") do |file|
-        file.write builds.to_json
-      end
       FileUtils.cp_r(build_dir, "build/#{info["branch"]}")
       changelog_helper.build_index_for builds
     end
