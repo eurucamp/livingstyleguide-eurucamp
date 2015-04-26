@@ -16,8 +16,10 @@
       <ul>
         <% for year in years.sort.reverse %>
           <li>
-            <h3><a href="<%= year %>/"> <%= year %></a></h3>
-            (<a href="https://github.com/eurucamp/livingstyleguide-eurucamp/tree/<%= year %>">Show source on GitHub</a>)
+            <h3><a href="<%= year %>/"><img src="<%= year %>/images/eurucamp-<%= year %>.svg" alt="eurucamp <%= year %> logo"></a></h3>
+            <div>
+              (<a href="https://github.com/eurucamp/livingstyleguide-eurucamp/tree/<%= year %>">Show source on GitHub</a>)
+            </div>
           </li>
         <% end %>
       </ul>

@@ -22,7 +22,9 @@ a
 
 .intro
   display: flex
+  -webkit-flex-direction: column
   flex-direction: column
+  -webkit-justify-content: flex-end
   justify-content: flex-end
   min-height: 50vh
   margin: 0 0 0 auto
@@ -46,10 +48,18 @@ a
     margin: 2vw 0 1vw
 
   li
+    -webkit-align-items: center
+    align-items: center
     background: #eeeeee
     border: 0.3vw rgba(white, 0.5) dashed
+    display: -webkit-flex
+    display: flex
     -webkit-flex: 1
     flex: 1
+    -webkit-flex-direction: column
+    flex-direction: column
+    -webkit-justify-content: center
+    justify-content: center
     list-style: none
     height: 9.2vw
     font-size: 0.8rem
@@ -58,7 +68,14 @@ a
     text-align: center
 
   h3
-    font-size: 3rem
+    a
+      background: transparent
+
+      &:hover
+        opacity: 0.8
+
+    img
+      height: 4vw
 
 .builds
   height: 50vh
