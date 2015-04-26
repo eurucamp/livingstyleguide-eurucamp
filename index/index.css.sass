@@ -26,7 +26,7 @@ a
   flex-direction: column
   -webkit-justify-content: flex-end
   justify-content: flex-end
-  min-height: 50vh
+  height: 50vh
   margin: 0 0 0 auto
   padding: 0 5vw 0 0
   width: 50vw
@@ -63,9 +63,11 @@ a
     list-style: none
     height: 9.2vw
     font-size: 0.8rem
-    margin-right: 1vw
     padding: 1vw
     text-align: center
+
+    + li
+      margin-left: 1vw
 
   h3
     a
@@ -87,3 +89,27 @@ a
 
   dt
     margin-top: 1em
+
+@media all and (max-width: 900px)
+  html
+    background-attachment: initial
+    background-position: 0 -287.9vw
+    background-size: 227%
+    background-repeat: repeat
+    font-size: 3vw
+    padding-top: 60vw
+
+  .intro,
+  .builds
+    height: auto
+    margin: 2em auto
+    padding: 0
+    overflow: visible
+    width: 70%
+
+  .intro
+    li
+      height: auto
+
+    h3 img
+      height: 6vw
