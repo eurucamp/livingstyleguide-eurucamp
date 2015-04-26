@@ -1,4 +1,6 @@
 User-agent: *
-Allow: /latest
+<% for year in years %>
+Allow: /<%= year %>
+<% end %>
 Allow: /index.html
 Disallow: /
