@@ -6,7 +6,7 @@
   padding: 0
 
 html
-  background: white url('background.svg') no-repeat 0 50%/cover fixed
+  background: white url('background.svg') no-repeat 0 50%/cover
   color: black
   font-family: 'sonar', sans-serif
   font-size: 1.3vw
@@ -21,6 +21,7 @@ a
     background: linear-gradient(to top, transparent 1px, #777777 1px, #777777 2px, transparent 2px)
 
 .intro
+  display: -webkit-flex
   display: flex
   -webkit-flex-direction: column
   flex-direction: column
@@ -92,7 +93,6 @@ a
 
 @media all and (max-width: 900px)
   html
-    background-attachment: initial
     background-position: 0 -287.9vw
     background-size: 227%
     background-repeat: repeat
