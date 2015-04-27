@@ -1,7 +1,7 @@
 eurucamp’s Living Style Guide
 =============================
 
-Live version: <http://style-guide.eurucamp.org/latest>
+Live version: <http://style-guide.eurucamp.org/2014>
 
 
 Run locally
