@@ -1,7 +1,7 @@
 Flickr
 ======
 
-~~~
+```
 <section class="***flickr***">
   <div class="***flickr--container***">
     <h1 class="***flickr--title***">2013 Flickr</h1>
@@ -22,5 +22,5 @@ Flickr
     <a class="flickr--show-more">Show more</a>
   </div>
 </section>
-~~~
+```
 

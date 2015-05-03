@@ -66,10 +66,8 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    livingstyleguide (1.0.4)
-      compass
-      hooks (= 0.3.3)
-      minisyntax
+    livingstyleguide (2.0.0.alpha.6)
+      minisyntax (>= 0.2.5)
       redcarpet (~> 3.0.0)
       sass
       thor
@@ -118,7 +116,7 @@ GEM
       sprockets-sass (~> 1.1.0)
     mime-types (2.2)
     mini_portile (0.5.3)
-    minisyntax (0.2.3)
+    minisyntax (0.2.5)
     minitest (4.7.5)
     multi_json (1.9.2)
     net-scp (1.2.0)
@@ -147,7 +145,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.0.0)
     ruby-progressbar (1.4.2)
-    sass (3.3.3)
+    sass (3.4.13)
     sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -175,7 +173,7 @@ PLATFORMS
 DEPENDENCIES
   compass (= 1.0.0.alpha.19)
   compass-placeholders
-  livingstyleguide
+  livingstyleguide (= 2.0.0.alpha.6)
   middleman
   middleman-livereload (~> 3.1.0)
   middleman-s3_sync

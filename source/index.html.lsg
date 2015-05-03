@@ -1,23 +1,20 @@
-# Base setup:
-source: stylesheets/eurucamp.css.sass
-title: "Living Style Guide for the eurucamp 2015"
+@css stylesheets/eurucamp.css.sass
 
+@title Living Style Guide for the eurucamp 2015
 
+@style base-font: sonar
+@style base-font-size: 16px
+@style color: $fuchsia
+@style code-background-color: $light-green
+@style code-color: $red
+@style highlight-color: $white
+@style layout-selector: '".layout"'
+@style width: 800px
 
-# Adjust default LivingStyleGuide design:
-style:
-  base-font: sonar
-  base-font-size: 16px
-  color: $fuchsia
-  code-background-color: $light-green
-  code-color: $red
-  highlight-color: $white
-  layout-selector: '".layout"'
+@default preprocessor: sass
+@default type: haml
 
-
-
-# Additional styling just for the style guide itself (won’t appear in the production CSS):
-styleguide-sass: |
+@css
   .livingstyleguide--page-title,
   .livingstyleguide--headline,
   .livingstyleguide--sub-headline,
@@ -44,6 +41,7 @@ styleguide-sass: |
   .livingstyleguide--page-title
     color: $light-green
     margin-top: 220px
+    text-align: center
     width: 100%
 
   .livingstyleguide > .cover > .cover--container
@@ -63,16 +61,33 @@ styleguide-sass: |
       &:hover
         color: darken($dark-red, 10%)
 
+@header
+  .cover
+    .cover--container
+      %h1.livingstyleguide--page-title Living Style Guide
+  .livingstyleguide--intro
+    %p.livingstyleguide--paragraph
+      Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2015.eurucamp.org/">2015.eurucamp.org</a> are defined and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.
 
 
-# Custom HTML as header/intro:
-header: |
-  <div class="cover">
-    <div class="cover--container">
-      <h1 class="livingstyleguide--page-title">Living Style Guide</h1>
-    </div>
-  </div>
-  <div class="livingstyleguide--intro">
-    <p class="livingstyleguide--paragraph">Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2015.eurucamp.org/">2015.eurucamp.org</a> are defined and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.</p>
-  </div>
+@import stylesheets/base/logo
+@import stylesheets/base/colors
+@import stylesheets/base/typography
 
+@import stylesheets/components/layout
+@import stylesheets/components/text
+@import stylesheets/components/cover
+@import stylesheets/components/speakers
+@import stylesheets/components/speakers-page
+@import stylesheets/components/info
+@import stylesheets/components/flickr
+@import stylesheets/components/concept
+@import stylesheets/components/flickr-and-concept
+@import stylesheets/components/events
+@import stylesheets/components/sponsors
+@import stylesheets/components/podcast
+@import stylesheets/components/pure-text
+@import stylesheets/components/guide
+@import stylesheets/components/concept-page
+@import stylesheets/components/team-page
+@import stylesheets/components/schedule

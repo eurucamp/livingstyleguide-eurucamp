@@ -71,20 +71,6 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-LivingStyleGuide::Example.add_filter :markdown do
-  begin
-    @syntax = :markdown
-
-    pre_processor do |markdown|
-      renderer = LivingStyleGuide::RedcarpetHTML.new(prefix: 'text--')
-      redcarpet = ::Redcarpet::Markdown.new(renderer, LivingStyleGuide::REDCARPET_RENDER_OPTIONS)
-      %Q(<article class="text">\n#{redcarpet.render(markdown)}\n</article>)
-    end
-
-  end
-end
-
-
 module InlineSVG
 
   def inline_svg(path, mime_type = nil)

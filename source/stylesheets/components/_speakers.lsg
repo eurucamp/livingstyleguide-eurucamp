@@ -1,7 +1,7 @@
 Speakers
 ========
 
-~~~
+```
 @full-width
 <section class="***speakers***">
   <div class="***speakers--container***">
@@ -36,5 +36,5 @@ Speakers
     </ul>
   </div>
 </section>
-~~~
+```
 

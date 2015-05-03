@@ -4,7 +4,7 @@ Team Page
 Members
 -------
 
-~~~
+```
 @haml
 @full-width
 ***.team-page***
@@ -22,13 +22,13 @@ Members
           %a***.team-page--members-item-link.-dribbble***(href)
           %a***.team-page--members-item-link.-website***(href)
           %a***.team-page--members-item-link.-email***(href)
-~~~
+```
 
 
 Ruby.Berlin
 -----------
 
-~~~
+```
 @haml
 @full-width
 .team-page
@@ -38,5 +38,5 @@ Ruby.Berlin
       ***.team-page--ruby-berlin-text***
         %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ullamcorper sem. Ut vestibulum vulputate nisl, id convallis velit blandit vel. Quisque non dignissim enim.
       %a***.team-page--ruby-berlin-link***(href) ruby.berlin
-~~~
+```
 
