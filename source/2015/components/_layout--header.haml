@@ -1,0 +1,6 @@
+%header.layout--header
+  .layout--header-container
+    %a.layout--header-logo(href="#{root_path ||= "/"}") eurucamp
+    %nav.layout--header-navigation
+      - items.each do |item|
+        %a.layout--header-navigation-item(href="#{item[:url]}")= item[:text]

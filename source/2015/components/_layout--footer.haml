@@ -1,0 +1,7 @@
+%footer.layout--footer
+  .layout--footer-container
+    - if defined?(text)
+      %p.layout--footer-text= text
+    %nav.layout--footer-navigation
+      - items.each do |item|
+        %a.layout--footer-navigation-item(href="#{item[:url]}")= item[:text]

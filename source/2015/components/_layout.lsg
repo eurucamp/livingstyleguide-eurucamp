@@ -1,34 +1,35 @@
 Layout
 ======
 
+
+Header
+------
+
 ```
-@full-width
-<div class="***layout***">
-  <header class="***layout--header***">
-    <div class="***layout--header-container***">
-      <a class="***layout--header-logo***">eurucamp</a>
-      <nav class="***layout--header-navigation***">
-        <a class="***layout--header-navigation-item***">Link</a>
-        <a class="layout--header-navigation-item">Link</a>
-        <a class="layout--header-navigation-item">Link</a>
-      </nav>
-    </div>
-  </header>
-  <div class="***layout--container***">
-    Content goes here
-  </div>
-  <footer class="***layout--footer***">
-    <div class="***layout--footer-container***">
-      <p class="***layout--footer-text***">
-        Some text
-      </p>
-      <nav class="***layout--footer-navigation***">
-        <a class="***layout--footer-navigation-item***">Link</a>
-        <a class="layout--footer-navigation-item">Link</a>
-        <a class="layout--footer-navigation-item">Link</a>
-      </nav>
-    </div>
-  </footer>
-</div>
+@haml
+- items = [ { url: "team", text: "Team"}, { url: "http://blog.eurucamp.org/", text: "Blog"} ]
+= style_template "layout--header", root_path: "/", items: items
 ```
 
+
+Footer
+------
+
+```
+@haml
+- items = [ { url: "coc", text: "Code of Conduct"}, { url: "imprint", text: "Imprint"} ]
+= style_template "layout--footer", text: "Footer Text", items: items
+```
+
+
+Complete Layout
+---------------
+
+```
+@full-width
+@haml
+- header_nav = [ { url: "team", text: "Team"}, { url: "http://blog.eurucamp.org/", text: "Blog"} ]
+- footer_nav = [ { url: "coc", text: "Code of Conduct"}, { url: "imprint", text: "Imprint"} ]
+= style_template "layout", header: { items: header_nav }, footer: { items: footer_nav } do
+  Site content
+```
