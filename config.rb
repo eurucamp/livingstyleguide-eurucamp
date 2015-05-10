@@ -42,6 +42,10 @@ activate :autoprefixer
 
 # Methods defined in the helpers block are available in templates
 helpers do
+  def commit
+    `git log -1 --pretty=%h`.strip
+  end
+
   def builds
     begin
       history = JSON.parse(open("http://style-guide.eurucamp.org/builds.json").read)
@@ -49,7 +53,7 @@ helpers do
       history = []
     end
     history << {
-      "commit"  => `git log -1 --pretty=%h`.strip,
+      "commit"  => commit,
       "message" => `git log -1 --pretty=%B`.split("\n").first.strip,
       "author"  => `git log -1 --pretty=%an`.strip,
       "time"    => `git log -1 --pretty=%ad`.strip
@@ -65,6 +69,17 @@ helpers do
     end
   end
 end
+
+StyleGuideAPI.initialize
+years.sort.reverse.each do |year|
+  StyleGuideAPI.add_templates "source/#{year}/components/*.haml", theme: year
+  if build?
+    StyleGuideAPI.add_stylesheet "http://style-guide.eurucamp.org/#{commit}/#{year}/eurucamp.css"
+  else
+    StyleGuideAPI.add_stylesheet "http://localhost:4567/#{year}/eurucamp.css"
+  end
+end
+activate :styleguide_api
 
 activate :relative_assets
 

@@ -66,7 +66,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    livingstyleguide (2.0.0.alpha.6)
+    livingstyleguide (2.0.0.alpha.7)
       minisyntax (>= 0.2.5)
       redcarpet (~> 3.0.0)
       sass
@@ -160,6 +160,8 @@ GEM
     sprockets-sass (1.1.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    styleguide-api (0.1.0)
+      tilt
     thor (0.18.1)
     thread_safe (0.3.3)
     tilt (1.4.1)
@@ -175,10 +177,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  livingstyleguide (= 2.0.0.alpha.6)
+  livingstyleguide (= 2.0.0.alpha.7)
   middleman
   middleman-autoprefixer
   middleman-livereload (~> 3.1.0)
   middleman-s3_sync
   quotation-marks
+  styleguide-api
   wdm (~> 0.1.0)
