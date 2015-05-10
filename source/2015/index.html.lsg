@@ -84,7 +84,6 @@
 @import components/layout
 @import components/text
 @import components/cover
-@import ../shared/components/navigation
 @import components/speakers
 @import components/speakers-page
 @import components/info
