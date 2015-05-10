@@ -34,7 +34,6 @@
     display: block
 
   .livingstyleguide--example
-    @extend .layout
     max-width: $livingstyleguide--width
     width: 100%
 
