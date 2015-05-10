@@ -27,6 +27,9 @@
   .livingstyleguide--example.-lsg-has-full-width
     padding: 0
 
+    .livingstyleguide--code-block
+      margin: auto
+
   .livingstyleguide--footer
     display: block
 
