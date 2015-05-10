@@ -1,4 +1,3 @@
-require 'lib/build_changelog'
 ###
 # Compass
 ###
@@ -40,21 +39,32 @@ page "index.html", layout: false
 activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def builds
+    begin
+      history = JSON.parse(open("http://style-guide.eurucamp.org/builds.json").read)
+    rescue OpenURI::HTTPError
+      history = []
+    end
+    history << {
+      "commit"  => `git log -1 --pretty=%h`.strip,
+      "message" => `git log -1 --pretty=%B`.split("\n").first.strip,
+      "author"  => `git log -1 --pretty=%an`.strip,
+      "time"    => `git log -1 --pretty=%ad`.strip
+    }
+    history
+  end
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
+  def years
+    Dir.glob("source/*").map do |file|
+      File.basename(file)
+    end.reject do |file|
+      not file =~ /^20\d\d$/
+    end
+  end
+end
 
 activate :relative_assets
-
-activate :build_changelog
 
 # Build-specific configuration
 configure :build do
@@ -71,13 +81,25 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+after_build do |builder|
+  commit = `git log -1 --pretty=%h`.strip
+  FileUtils.rm_r "#{build_dir}/#{commit}", force: true
+  files = Dir.glob("#{build_dir}/*")
+  FileUtils.mkdir "#{build_dir}/#{commit}"
+  files.each do |file|
+    file = File.basename(file)
+    FileUtils.cp_r("#{build_dir}/#{file}", "#{build_dir}/#{commit}/#{file}")
+  end
+end
+
 module InlineSVG
 
   def inline_svg(path, mime_type = nil)
     path = path.value
-    real_path = File.join(::Compass.configuration.images_path, path)
-    svg = data(real_path)
-    colors = File.readlines(File.join(%w(source stylesheets base _colors.sass))).compact
+    root = File.dirname(environment.options[:original_filename])
+    real_path = root + "/images/" + path
+    svg = File.read(real_path)
+    colors = File.readlines(root + "/base/_colors.sass").compact
     colors.each do |line|
       if m = line.match(%r(^(?<variable>.+):\s*(?<color>.+)$))
         svg.gsub! m[:variable], m[:color]

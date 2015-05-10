@@ -1,4 +1,4 @@
-@css stylesheets/eurucamp.css.sass
+@css eurucamp.css.sass
 
 @title Living Style Guide for the eurucamp 2015
 
@@ -61,6 +61,10 @@
       &:hover
         color: darken($dark-red, 10%)
 
+  @at-root
+    .livingstyleguide--html
+      @extend .layout
+
 @header
   .cover
     .cover--container
@@ -70,24 +74,25 @@
       Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2015.eurucamp.org/">2015.eurucamp.org</a> are defined and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.
 
 
-@import stylesheets/base/logo
-@import stylesheets/base/colors
-@import stylesheets/base/typography
+@import base/logo
+@import base/colors
+@import base/typography
 
-@import stylesheets/components/layout
-@import stylesheets/components/text
-@import stylesheets/components/cover
-@import stylesheets/components/speakers
-@import stylesheets/components/speakers-page
-@import stylesheets/components/info
-@import stylesheets/components/flickr
-@import stylesheets/components/concept
-@import stylesheets/components/flickr-and-concept
-@import stylesheets/components/events
-@import stylesheets/components/sponsors
-@import stylesheets/components/podcast
-@import stylesheets/components/pure-text
-@import stylesheets/components/guide
-@import stylesheets/components/concept-page
-@import stylesheets/components/team-page
-@import stylesheets/components/schedule
+@import components/layout
+@import components/text
+@import components/cover
+@import ../shared/components/navigation
+@import components/speakers
+@import components/speakers-page
+@import components/info
+@import components/flickr
+@import components/concept
+@import components/flickr-and-concept
+@import components/events
+@import components/sponsors
+@import components/podcast
+@import components/pure-text
+@import components/guide
+@import components/concept-page
+@import components/team-page
+@import components/schedule

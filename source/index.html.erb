@@ -5,7 +5,7 @@
     <meta content="width=device-width" name="viewport">
     <meta content="http://style-guide.eurucamp.org/eurucamp-styleguide.png" property="og:image">
     <title>eurucamp style guides</title>
-    <link href="index.css" rel="stylesheet">
+    <%= stylesheet_link_tag "index" %>
   </head>
   <body>
     <img src="eurucamp-styleguide.png" alt="style guide logo" class="logo">
@@ -32,7 +32,7 @@
     <section class="builds">
       <dl>
         <% for build in builds.reverse %>
-          <dt><a href="<%= build["commit"] %>/"><strong><%= build["branch"] %>:</strong> <%= build["commit"] %></a></dt>
+          <dt><a href="<%= build["commit"] %>/"><%= build["commit"] %></a></dt>
           <dd><strong><%= build["message"] %></strong><br><%= build["author"] %> (<%= build["time"] %>)</dd>
         <% end %>
       </dl>
