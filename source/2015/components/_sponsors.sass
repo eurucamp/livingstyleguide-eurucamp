@@ -26,7 +26,7 @@
   @include grid(12, 8, 6)
   text-align: center
   font-weight: bold
-  color: $red
+  color: $secondary-color
   padding-bottom: 50px
 
 .sponsors--list
@@ -37,7 +37,7 @@
 
 .sponsors--list-item-label, .sponsors--page-list-item-label
   display: block
-  background: $red
+  background: $secondary-color
   color: $white
   opacity: 1
   text-align: right
@@ -78,9 +78,9 @@
 
 .sponsors--show-more
   @extend %show-more
-  background: $dark-red
+  background: $dark-secondary-color
   &:hover
-    background: $red
+    background: $secondary-color
 
 .sponsors.-home
   padding-bottom: 50px
@@ -207,7 +207,7 @@
 .sponsors--section-item-text
   font-size: 17px
   a
-    color: $red
+    color: $secondary-color
 
 
 .sponsors-page--info
@@ -220,7 +220,7 @@
     margin-left: 200px
     margin-bottom: -200px
     &:before
-      background: $fuchsia
+      background: $primary-color
     @media all and (max-width: 800px)
       color: $black
       margin-top: 100px
@@ -248,6 +248,6 @@
 
 .sponsors-page--show-more
   @extend %show-more
-  background: $dark-red
+  background: $dark-secondary-color
   &:hover
-    background: $red
+    background: $secondary-color

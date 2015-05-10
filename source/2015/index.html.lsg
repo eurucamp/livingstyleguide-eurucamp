@@ -4,9 +4,9 @@
 
 @style base-font: sonar
 @style base-font-size: 16px
-@style color: $fuchsia
-@style code-background-color: $light-green
-@style code-color: $red
+@style color: $primary-color
+@style code-background-color: $light-tertiary-color
+@style code-color: $secondary-color
 @style highlight-color: $white
 @style layout-selector: '".layout"'
 @style width: 800px
@@ -39,7 +39,7 @@
       max-width: 100%
 
   .livingstyleguide--page-title
-    color: $light-green
+    color: $light-tertiary-color
     margin-top: 220px
     text-align: center
     width: 100%
@@ -48,7 +48,7 @@
     height: 350px
 
   .livingstyleguide--intro
-    background: $light-green
+    background: $light-tertiary-color
     display: block
     padding: 50px 0
 
@@ -56,10 +56,10 @@
       font-size: 20px
 
     a
-      color: $red
+      color: $secondary-color
 
       &:hover
-        color: darken($dark-red, 10%)
+        color: darken($dark-secondary-color, 10%)
 
   @at-root
     .livingstyleguide--html

@@ -2,8 +2,8 @@ Colors
 ======
 
 @colors:
-- -         -            $white      -
-- $fuchsia  -            $light-gray -
-- $red      $light-green $gray       -
-- $dark-red $green       $dark-gray  -
-- -         -            $black      -
+-   -                       -                       $white        -
+-   $primary-color          -                       $light-gray   -
+-   $secondary-color        $light-tertiary-color   $gray         -
+-   $dark-secondary-color   $tertiary-color         $dark-gray    -
+-   -                       -                       $black        -

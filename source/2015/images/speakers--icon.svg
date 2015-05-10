@@ -6,8 +6,8 @@
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="speakers--icon" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
-            <path d="M-0.486,9.27 L19.514,9.27 L19.514,29.27 L-0.486,9.27 Z" id="Shape" fill="$fuchsia" sketch:type="MSShapeGroup"></path>
-            <path d="M-0.486,29.27 L-0.486,9.27 L9.77,0.033 L19.514,9.27 L-0.486,29.27 Z" id="Shape" fill="$light-green" sketch:type="MSShapeGroup"></path>
+            <path d="M-0.486,9.27 L19.514,9.27 L19.514,29.27 L-0.486,9.27 Z" id="Shape" fill="$primary-color" sketch:type="MSShapeGroup"></path>
+            <path d="M-0.486,29.27 L-0.486,9.27 L9.77,0.033 L19.514,9.27 L-0.486,29.27 Z" id="Shape" fill="$light-tertiary-color" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

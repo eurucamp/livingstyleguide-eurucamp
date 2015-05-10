@@ -1,5 +1,5 @@
 .schedule
-  background: $fuchsia
+  background: $primary-color
   display: block
   p
     font-size: 20px
@@ -9,12 +9,12 @@
 
 .schedule--title
   @extend %headline
-  color: $dark-red
+  color: $dark-secondary-color
   opacity: 0.8
 
 .schedule--main-title
   @extend %page--title
-  color: $dark-red
+  color: $dark-secondary-color
   margin: 80px
   pointer-events: none
   transform-origin: 100px 250px
@@ -24,7 +24,7 @@
 
 .schedule--day-title
   @extend %headline
-  color: $light-green
+  color: $light-tertiary-color
   margin-top: 50px
   text-align: left
 
@@ -68,10 +68,10 @@
     @extend %page--section-paragraph
     margin: 0.5em 0 0
     a
-      color: $fuchsia
+      color: $primary-color
       padding: 4px
     a:hover
-      background: $fuchsia
+      background: $primary-color
       color: $white
       text-decoration: none
 
@@ -120,23 +120,23 @@
   .talk
     background: $white
     .event_location
-      color: $fuchsia
+      color: $primary-color
 
   span.title
     display: block
   .break,
   .lunch
-    background: $fuchsia
+    background: $primary-color
     color: $white
   .party
-    background: darken($fuchsia, 10%)
+    background: darken($primary-color, 10%)
     color: $white
     .event_location
       color: $white
 
   .activities
-    background: $light-green
-    color: $fuchsia
+    background: $light-tertiary-color
+    color: $primary-color
 
   .event_location
     display: block
