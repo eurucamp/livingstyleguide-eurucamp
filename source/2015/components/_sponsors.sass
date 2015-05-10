@@ -48,7 +48,7 @@
   margin-left: -20%
   font-weight: bold
   text-transform: uppercase
-  @include transform(rotate(-90deg))
+  transform: rotate(-90deg)
 
 .sponsors--list-item-label
   margin: -1% 70% 0 70%
@@ -89,11 +89,11 @@
   @extend %page--title
   font-size: 6rem
   margin: 100px
-  @include transform-origin(100px, 250px)
+  transform-origin: 100px 250px
   @media all and (max-width: 600px)
     font-size: 4rem
-    @include transform-origin(150px, 150px)
     margin: 0
+    transform-origin: 150px 150px
 
 .sponsors-page--companies
   .sponsors--section

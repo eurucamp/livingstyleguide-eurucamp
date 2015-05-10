@@ -24,8 +24,8 @@
 .guide--main-title
   @extend %page--title
   color: $dark-red
+  transform-origin: 50px -50px
   margin: -100px
-  @include transform-origin(50px, -50px)
 
 
 .guide--photo-container
@@ -38,8 +38,8 @@
 
 .guide--photo
   -webkit-clip-path: polygon(0% 0%,0% 100%,65% 100%,100% 65%, 100% 0%)
+  transform: translateY(-50%)
   width: 100%
-  @include transform(translateY(-50%))
 
 
 .guide--show-more

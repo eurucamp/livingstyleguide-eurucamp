@@ -11,7 +11,6 @@
 .speakers-page--title
   @extend %page--title
   margin: -70px
-  //@include transform-origin(50px, -50px)
 
 
 .speakers-page--list
@@ -67,10 +66,10 @@
   top: 100
 
 .speakers-page--navigation-item
-  @extend %display-block
-  @extend %text-transform-uppercase
+  display: block
   height: 1.4em
   margin-left: 10px
+  text-transform: uppercase
 
 .speakers-page--item-info-links
   @extend %page--section-paragraph
@@ -89,5 +88,5 @@
       background-image: inline-svg("icons/#{$type}.svg")
 
   &:hover
-    @include transform(translateZ(0))
-    @include filter(unquote("brightness(0.9)"))
+    filter: brightness(0.9)
+    transform: translateZ(0)
