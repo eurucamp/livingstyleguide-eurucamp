@@ -1,3 +1,29 @@
+:ruby
+  current_website = "http://2015.eurucamp.org"
+  header = {
+    root_path: current_website,
+    items: [
+      { url: "http://tickets.eurucamp.org/", text: "Tickets" },
+      #{ url: "https://cfp.eurucamp.org/", text: "CfP" },
+      #{ url: "#{current_website}/guide", text: "Guide" },
+      #{ url: "#{current_website}/speakers", text: "Speakers" },
+      #{ url: "http://media.eurucamp.org/2014.html#eurucamp", text: "Videos" },
+      #{ url: "http://activities.eurucamp.org/", text: "Activities" },
+      { url: "#{current_website}/concept", text: "Concept" },
+      { url: "http://blog.eurucamp.org/", text: "Blog" },
+      { url: "#{current_website}/team", text: "Team" },
+    ]
+  }
+  footer = {
+    text: %Q(This community event is proudly organized by <a href="http://rubyberlin.org">Ruby Berlin e.V.</a>),
+    items: [
+      { url: "#{current_website}/policies", text: "Code of Conduct" },
+      { url: "#{current_website}/accessibility", text: "Accessibility" },
+      { url: "#{current_website}/glossary", text: "Glossary" },
+      { url: "mailto:info@eurucamp.org", text: "Contact" },
+      { url: "#{current_website}/imprint", text: "Imprint" },
+    ]
+  }
 .layout
   = style_template "layout--header", header
   = yield

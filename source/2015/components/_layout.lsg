@@ -28,8 +28,6 @@ Complete Layout
 ```
 @full-width
 @haml
-- header_nav = [ { url: "team", text: "Team"}, { url: "http://blog.eurucamp.org/", text: "Blog"} ]
-- footer_nav = [ { url: "coc", text: "Code of Conduct"}, { url: "imprint", text: "Imprint"} ]
-= style_template "layout", header: { items: header_nav }, footer: { items: footer_nav } do
+= style_template "layout" do
   Site content
 ```
