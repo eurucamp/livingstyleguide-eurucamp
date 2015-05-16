@@ -15,12 +15,12 @@ Text
     et ante feugiat ***[posuere vitae](#)*** sit amet urna. Suspendisse
     vestibulum elit nulla, id venenatis enim ultricies quis.
 
-    ***>*** Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     > Nunc sed lorem gravida, accumsan enim id, interdum sem.
     > Nam sollicitudin posuere libero.
     > Suspendisse eu orci ut erat tristique consectetur.
 
-    ******* List item
+    * List item
     * Another list item
     * Last list item
 ```

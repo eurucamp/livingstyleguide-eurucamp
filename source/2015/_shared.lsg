@@ -1,0 +1,74 @@
+@css eurucamp.css.sass
+
+@style base-font: sonar
+@style base-font-size: 16px
+@style color: $primary-color
+@style code-background-color: $light-tertiary-color
+@style code-color: $secondary-color
+@style highlight-color: $white
+@style layout-selector: '".layout"'
+@style width: 800px
+
+@default preprocessor: sass
+@default type: haml
+
+@css
+  @at-root
+    .livingstyleguide--page-title,
+    .livingstyleguide--headline,
+    .livingstyleguide--sub-headline,
+    .livingstyleguide--sub-sub-headline
+      margin-bottom: 1em
+      margin-top: 3em
+      text-align: center
+      text-transform: uppercase
+
+    .livingstyleguide--example.-lsg-has-full-width
+      padding: 0
+
+      .livingstyleguide--code-block
+        margin: auto
+
+    .livingstyleguide--footer
+      display: block
+
+    .livingstyleguide--example
+      max-width: $livingstyleguide--width
+      width: 100%
+
+      &.-lsg-has-full-width
+        max-width: 100%
+
+    .livingstyleguide--page-title
+      color: $light-tertiary-color
+      margin-top: 220px
+      text-align: center
+      width: 100%
+
+    .livingstyleguide > .cover > .cover--container
+      height: 350px
+
+    .livingstyleguide--intro
+      background: $light-tertiary-color
+      display: block
+      padding: 50px 0
+
+      .livingstyleguide--paragraph
+        font-size: 20px
+
+      a
+        color: $secondary-color
+
+        &:hover
+          color: darken($dark-secondary-color, 10%)
+
+    .livingstyleguide--html
+      @extend .layout
+
+@header
+  .cover
+    .cover--container
+      %h1.livingstyleguide--page-title Living Style Guide
+  .livingstyleguide--intro
+    %p.livingstyleguide--paragraph
+      Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2015.eurucamp.org/">2015.eurucamp.org</a> are defined and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.

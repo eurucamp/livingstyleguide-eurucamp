@@ -2,12 +2,8 @@
 
 @import shared
 
-@import base/logo
-@import base/colors
-@import base/typography
+Those components need to be updated to the style guide API:
 
-@import components/layout
-@import components/text
 @import components/cover
 @import components/speakers
 @import components/speakers-page
