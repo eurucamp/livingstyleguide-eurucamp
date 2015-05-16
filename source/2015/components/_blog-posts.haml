@@ -1,4 +1,6 @@
-%ul.blog-posts
-  - items.each do |item|
-    %li.blog-posts--item
-      = style_template "blog-post", item
+.blog-posts
+  %h1.blog-posts--title= title
+  %ul
+    - items.each do |item|
+      %li.blog-posts--item
+        = style_template "blog-post", item

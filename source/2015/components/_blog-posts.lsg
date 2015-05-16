@@ -3,5 +3,5 @@ Blog Posts
 
 ```
 @haml
-= style_template "blog-posts", items: [ { date: Time.now, title: "A blog post", summary: lorem.sentences(5), url: "#", tags: [{ url: "#", text: "Speakers" }] }, { date: Time.new(2015, 1, 2), title: "Another blog post", summary: lorem.sentences(3), url: "#", tags: [{ url: "#", text: "Tickets" }, { url: "#", text: "Speakers" }] } ]
+= style_template "blog-posts", title: "Blog Posts", items: [ { date: Time.now, title: "A blog post", summary: lorem.sentences(5), url: "#", tags: [{ url: "#", text: "Speakers" }] }, { date: Time.new(2015, 1, 2), title: "Another blog post", summary: lorem.sentences(3), url: "#", tags: [{ url: "#", text: "Tickets" }, { url: "#", text: "Speakers" }] } ]
 ```
