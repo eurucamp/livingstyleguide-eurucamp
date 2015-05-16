@@ -1,0 +1,26 @@
+Button
+======
+
+```
+@haml
+%button***.button*** A button
+%a***.button(href)*** A button
+```
+
+```
+@haml
+%button.button***.-primary*** A button
+%a.button***.-primary***(href) A button
+```
+
+```
+@haml
+%button.button***.-secondary*** A button
+%a.button***.-secondary***(href) A button
+```
+
+```
+@haml
+%button.button***.-tertiary*** A button
+%a.button***.-tertiary***(href) A button
+```
