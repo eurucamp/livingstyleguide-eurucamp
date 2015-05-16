@@ -2,8 +2,8 @@
 
 @style base-font: sonar
 @style base-font-size: 16px
-@style color: $primary-color
-@style code-background-color: $light-tertiary-color
+@style color: mix($dark-gray, $primary-color)
+@style code-background-color: mix($light-tertiary-color, $white)
 @style code-color: $secondary-color
 @style highlight-color: $white
 @style layout-selector: '".layout"'
