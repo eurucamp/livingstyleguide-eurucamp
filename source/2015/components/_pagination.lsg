@@ -3,5 +3,15 @@ Pagination
 
 ```
 @haml
-= style_template "pagination", previous_url: "#", next_url: "#", page: 1, pages: 5
+= style_template "pagination", previous_url: "#", next_url: "#", page: 2, pages: 5
+```
+
+```
+@haml
+= style_template "pagination", next_url: "#", page: 1, pages: 5
+```
+
+```
+@haml
+= style_template "pagination", previous_url: "#", page: 5, pages: 5
 ```

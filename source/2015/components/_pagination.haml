@@ -1,5 +1,11 @@
 .pagination
   .pagination--container
-    %a.button(href=previous_url) « Back
+    - if defined?(previous_url) && previous_url
+      %a.button(href=previous_url) « Back
+    - else
+      %span.button « Back
     .pagination--current Page #{page} of #{pages}
-    %a.button(href=next_url) Next »
+    - if defined?(next_url) && next_url
+      %a.button(href=next_url) Next »
+    - else
+      %span.button Next »
