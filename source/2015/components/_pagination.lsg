@@ -1,0 +1,7 @@
+Pagination
+==========
+
+```
+@haml
+= style_template "pagination", previous_url: "#", next_url: "#", page: 1, pages: 5
+```
