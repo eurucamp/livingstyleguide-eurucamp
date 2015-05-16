@@ -8,6 +8,8 @@
 @style highlight-color: $white
 @style layout-selector: '".layout"'
 @style width: 800px
+@style color-swatch-border-radius: 0
+@style color-swatch-border-width: 0
 
 @default preprocessor: sass
 @default type: haml

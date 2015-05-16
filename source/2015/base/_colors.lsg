@@ -2,8 +2,18 @@ Colors
 ======
 
 @colors:
--   -                       -                       $white        -
--   $primary-color          -                       $light-gray   -
--   $secondary-color        $light-tertiary-color   $gray         -
--   $dark-secondary-color   $tertiary-color         $dark-gray    -
--   -                       -                       $black        -
+-                -                       -                       $white
+-                -                       $light-tertiary-color   $light-gray
+$primary-color   $secondary-color        $tertiary-color         $gray
+-                $dark-secondary-color   -                       $dark-gray
+-                -                       -                       $black
+
+@css
+  .livingstyleguide--color-swatches
+    margin: 0
+    padding: 0
+    width: 100%
+
+  .livingstyleguide--color-swatch
+    margin: 0
+    width: 25%
