@@ -1,0 +1,18 @@
+# Using the style guide API
+
+Components ready to use via our [style guide API](https://github.com/hagenburger/styleguide-api). To use the API, add this to your _Gemfile:_
+
+``` ruby
+gem "styleguide-api"
+```
+
+And activate the API in Middleman’s _config.rb:_
+
+@import components-middleman-config.erb
+
+After restarting Middleman, the templates are available as shown in the examples below.
+
+@css
+  background: $white
+  display: block
+  padding: 100px 0

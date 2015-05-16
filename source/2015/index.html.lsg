@@ -5,21 +5,3 @@
 @import base/logo
 @import base/colors
 @import base/typography
-
-@import components/layout
-@import components/text
-@import components/cover
-@import components/speakers
-@import components/speakers-page
-@import components/info
-@import components/flickr
-@import components/concept
-@import components/flickr-and-concept
-@import components/events
-@import components/sponsors
-@import components/podcast
-@import components/pure-text
-@import components/guide
-@import components/concept-page
-@import components/team-page
-@import components/schedule
