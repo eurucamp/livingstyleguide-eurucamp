@@ -1,5 +1,18 @@
 %footer.layout--footer
   .layout--footer-container
+    .layout--footer-social-icons
+      %a.layout--footer-social-icons-item.-twitter(href="https://twitter.com/eurucamp" title="Twitter")
+        %span.hidden-for-sighted
+          Twitter account
+      %a.layout--footer-social-icons-item.-facebook(href="https://facebook.com/eurucamp" title="Facebook")
+        %span.hidden-for-sighted
+          Facebook Page
+      %a.layout--footer-social-icons-item.-lanyrd(href="https://lanyrd.com/2015/eurucamp/" title="Lanyrd")
+        %span.hidden-for-sighted
+          Lanyrd Event
+      %a.layout--footer-social-icons-item.-github(href="https://github.com/eurucamp" title="GitHub")
+        %span.hidden-for-sighted
+          GitHub Orga
     - if defined?(text)
       %p.layout--footer-text= text
     %nav.layout--footer-navigation
