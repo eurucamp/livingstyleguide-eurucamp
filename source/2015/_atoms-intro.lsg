@@ -1,0 +1,8 @@
+# Using Atoms
+
+The atoms listed here are meant to be reused within the components. They won’t be available stand-alone via the API.
+
+@css
+  background: $white
+  display: block
+  padding: 100px 0
