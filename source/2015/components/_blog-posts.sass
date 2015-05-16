@@ -1,0 +1,58 @@
+.blog-posts
+  background: $secondary-color
+  display: block
+  padding: 50px 0
+
+
+.blog-posts--item
+  @extend %container
+
+
+.blog-posts--item-date
+  @extend %page--section-title
+  color: $white
+
+  &:before
+    background: $light-tertiary-color
+
+
+.blog-posts--item-date-date
+  display: block
+  font-size: 3rem
+  opacity: 0.5
+
+
+.blog-posts--item-title
+  color: $light-tertiary-color
+  display: block
+  font-size: 3rem
+  font-weight: bold
+  line-height: 1.1
+  margin: 0.5em 0
+  position: relative
+  text-align: center
+  z-index: 3
+
+  &[href]:hover
+    color: $primary-color
+
+
+.blog-posts--item-tags
+  display: block
+  margin-bottom: 1em
+  text-align: center
+
+
+.blog-posts--item-tags-item
+  color: $light-tertiary-color
+  font-weight: bold
+  margin: 0 1em
+
+  &[href]:hover
+    color: $primary-color
+
+
+.blog-posts--item-summary
+  background: $white
+  display: block
+  padding: 30px

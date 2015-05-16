@@ -6,3 +6,4 @@
 
 @import components/layout
 @import components/text
+@import components/blog-posts
