@@ -1,17 +1,4 @@
 %ul.blog-posts
   - items.each do |item|
     %li.blog-posts--item
-      - date = Time.parse(item[:date].to_s)
-      %date.blog-posts--item-date(datetime="#{date}")
-        %span.blog-posts--item-date-year= date.strftime("%Y")
-        %span.blog-posts--item-date-date= date.strftime("%h") + " " + date.strftime("%d")
-      %h2
-        %a.blog-posts--item-title(href="#{item[:url]}")= item[:title]
-      .blog-posts--item-tags
-        - item[:tags].each do |tag|
-          %a.blog-posts--item-tags-item(href="#{tag[:url]}")= tag[:text]
-      .blog-posts--item-summary
-        = style_template "text" do
-          = item[:summary]
-          %p
-            %a(href="#{item[:url]}") Read on …
+      = style_template "blog-post", item

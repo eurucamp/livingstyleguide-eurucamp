@@ -1,0 +1,59 @@
+.blog-post
+  display: block
+  background: $secondary-color
+
+
+.blog-post--container
+  @extend %container
+
+
+.blog-post--date
+  @extend %page--section-title
+  color: $white
+
+  &:before
+    background: $light-tertiary-color
+
+
+.blog-post--date-date
+  display: block
+  font-size: 3rem
+  opacity: 0.5
+
+
+.blog-post--title
+  color: $light-tertiary-color
+  display: block
+  font-size: 3rem
+  font-weight: bold
+  line-height: 1.1
+  margin: 0.5em 0
+  position: relative
+  text-align: center
+  z-index: 3
+
+  &[href]:hover
+    color: $primary-color
+
+
+.blog-post--tags
+  display: block
+  margin-bottom: 1em
+  text-align: center
+
+
+.blog-post--tags-item
+  color: $light-tertiary-color
+  font-weight: bold
+  margin: 0 1em
+
+  &[href]:hover
+    color: $primary-color
+
+
+.blog-post--summary,
+.blog-post--text
+  @extend %container
+  background: $white
+  display: block
+  padding: 30px

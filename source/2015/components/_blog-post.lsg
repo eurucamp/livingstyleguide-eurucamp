@@ -1,0 +1,9 @@
+Blog Post
+=========
+
+```
+@haml
+= style_template "blog-post", date: Time.now, title: "A blog post", tags: [{ url: "#", text: "Tickets" }, { url: "#", text: "Speakers" }] do
+  :markdown
+    #{lorem.paragraphs(5)}
+```

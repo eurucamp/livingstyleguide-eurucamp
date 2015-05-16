@@ -1,0 +1,24 @@
+.blog-post
+  .blog-post--container
+    - date = Time.parse(date.to_s)
+    %date.blog-post--date(datetime="#{date}")
+      %span.blog-post--date-year= date.strftime("%Y")
+      %span.blog-post--date-date= date.strftime("%h") + " " + date.strftime("%d")
+    - if defined?(url)
+      %h2
+        %a.blog-post--title(href="#{url}")= title
+    - else
+      %h2.blog-post--title= title
+    .blog-post--tags
+      - tags.each do |tag|
+        %a.blog-post--tags-item(href="#{tag[:url]}")= tag[:text]
+    - if defined?(summary)
+      .blog-post--summary
+        = style_template "text" do
+          = summary
+          %p
+            %a(href="#{url}") Read on …
+    - else
+      .blog-post--text
+        = style_template "text" do
+          = yield
