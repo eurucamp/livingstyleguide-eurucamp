@@ -67,6 +67,9 @@
     .livingstyleguide--html
       @extend .layout
 
+    .livingstyleguide--code-block:first-child
+      margin-top: -10px
+
     .livingstyleguide--nav
       background: $secondary-color
       display: block
