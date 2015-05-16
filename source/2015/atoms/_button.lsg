@@ -4,23 +4,31 @@ Button
 ```
 @haml
 %button***.button*** A button
-%a***.button(href)*** A button
+%a.button(href) A button
+%button.button(***disabled***) A disabled button
+%a.button A disabled button
 ```
 
 ```
 @haml
 %button.button***.-primary*** A button
-%a.button***.-primary***(href) A button
+%a.button.-primary(href) A button
+%button.button.-primary(disabled) A disabled button
+%a.button.-primary A deactivated button
 ```
 
 ```
 @haml
 %button.button***.-secondary*** A button
-%a.button***.-secondary***(href) A button
+%a.button.-secondary(href) A button
+%button.button.-secondary(disabled) A disabled button
+%a.button.-secondary A deactivated button
 ```
 
 ```
 @haml
 %button.button***.-tertiary*** A button
-%a.button***.-tertiary***(href) A button
+%a.button.-tertiary(href) A button
+%button.button.-tertiary(disabled) A disabled button
+%a.button.-tertiary A deactivated button
 ```
