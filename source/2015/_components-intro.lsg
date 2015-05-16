@@ -10,7 +10,11 @@ And activate the API in Middleman’s _config.rb:_
 
 @import components-middleman-config.erb
 
-After restarting Middleman, the templates are available as shown in the examples below.
+After restarting Middleman, the templates are available as shown in the examples below like:
+
+``` plain
+= style_template "name-of-template", data: "as", hash: { with: "children" }
+```
 
 @css
   background: $white
