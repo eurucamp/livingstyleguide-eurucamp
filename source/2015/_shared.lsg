@@ -41,7 +41,7 @@
       &.-lsg-has-full-width
         max-width: 100%
 
-    .livingstyleguide--page-title
+    .livingstyleguide .livingstyleguide--page-title
       color: $light-tertiary-color
       margin-top: 220px
       text-align: center
