@@ -6,6 +6,6 @@ Speaker List
 
 ```
 @haml
-- speakers = [ { "name" => "Name One", "image" => "avatar" }, { "name" => "Name Two", "image" => "avatar" }, { "name" => "Name Three", "image" => "avatar" }, { "name" => "Name Four", "image" => "avatar" } ]
+- speakers = [ { "name" => "Name One", "image" => "avatar", "href" => "#href" }, { "name" => "Name Two", "image" => "avatar", "href" => "#href" }, { "name" => "Name Three", "image" => "avatar", "href" => "#href" }, { "name" => "Name Four", "image" => "avatar", "href" => "#href" } ]
 = style_template "speaker-list", speakers: speakers, image_dir: '2015/images/dummy'
 ```
