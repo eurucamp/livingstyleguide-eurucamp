@@ -1,0 +1,4 @@
+%a.speaker-avatar{href: speaker['href']}
+  .speaker-avatar--photo
+    = image_tag "#{image_dir}/#{speaker['image']}.jpg", class: 'speaker-avatar--photo-image'
+  %h1.speaker-avatar--name= speaker['name']

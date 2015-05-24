@@ -1,6 +1,4 @@
 %ul.speaker-list
   - speakers.each do |speaker|
-    %a.speaker-list--item{href: speaker['href']}
-      .speaker-list--item-photo
-        = image_tag "#{image_dir}/#{speaker['image']}.jpg", class: 'speaker-list--item-photo-image'
-      %h1.speaker-list--item-name= speaker['name']
+    .speaker-list--item
+      = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir

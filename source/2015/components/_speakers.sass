@@ -1,23 +1,25 @@
 .speaker-list
 
 .speaker-list--item
-  margin-bottom: 1em
-  text-align: center
   @include grid(4, 4, 4 1, 4)
+  margin-bottom: 1em
 
-.speaker-list--item-photo
+.speaker-avatar
+  text-align: center
+
+.speaker-avatar--photo
   background: $gray
   display: block
   overflow: hidden
   transform: rotate(45deg) scale(0.72)
 
-.speaker-list--item-photo-image
+.speaker-avatar--photo-image
   display: block
   filter: grayscale(100%)
   transform: rotate(-45deg) scale(1.5)
   width: 100%
 
-.speaker-list--item-name
+.speaker-avatar--name
   @extend %ellipsis
   background: $primary-color
   color: $white
