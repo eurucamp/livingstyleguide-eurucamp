@@ -151,3 +151,9 @@ activate :s3_sync do |s3_sync|
   s3_sync.bucket = 'style-guide.eurucamp.org'
   s3_sync.region = 'eu-west-1'
 end
+
+helpers do
+  def md2html(text)
+    Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(text)
+  end
+end
