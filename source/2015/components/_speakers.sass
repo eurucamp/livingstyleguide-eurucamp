@@ -82,25 +82,24 @@
     filter: brightness(0.9)
     transform: translateZ(0)
 
-.speaker-details--avatar
-  @include grid(5, 8, 6)
-  margin-top: 48px
-
-.speakers-details--info
-  @include grid(7, 8, 6)
-  font-size: 16px
-  margin-top: 48px
-  padding-left: 35px
+.speaker-details
   line-height: 1.5em
 
+.speaker-details--avatar
+  @include grid(4)
+
 .speakers-details--info-bio
+  @include grid(4)
 
 .speakers-details--info-talk-title
   @extend %page--section-paragraph
   font-size: 18px
   font-weight: bold
-  margin-bottom: 0
+  margin-bottom: 18px
+  margin-top: 36px
+  text-align: center
 
 .speakers-details--info-talk-abstract
+  @include grid(4)
 
 .speaker-details-list
