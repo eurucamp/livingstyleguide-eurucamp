@@ -1,0 +1,4 @@
+.speaker-details-list
+  - speakers.each do |speaker|
+    .speaker-details-list--item
+      = style_template "speaker-details", speaker: speaker, image_dir: image_dir
