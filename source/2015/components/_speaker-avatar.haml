@@ -1,4 +1,22 @@
-%a.speaker-avatar{href: speaker['href']}
-  .speaker-avatar--photo
-    = image_tag "#{image_dir}/#{speaker['image']}.jpg", class: 'speaker-avatar--photo-image'
-  %h1.speaker-avatar--name= speaker['name']
+%div.speaker-avatar
+  %a{href: speaker['href']}
+    .speaker-avatar--photo
+      = image_tag "#{image_dir}/#{speaker['image']}.jpg", class: 'speaker-avatar--photo-image'
+    %h1.speaker-avatar--name= speaker['name']
+  - if show_flags
+    .speaker-avatar--countries
+      - speaker.fetch('country', []).map(&:downcase).each do |country_code|
+        %span{class: "speaker-avatar--countries-item -#{country_code}"} &nbsp;
+
+  - if show_social
+    .speaker-avatar--info-links
+      - if speaker['twitter'].present?
+        = link_to '', "https://twitter.com/#{speaker['twitter']}",
+            class: 'speaker-avatar--info-links-item -twitter'
+      - if speaker['github'].present?
+        = link_to '', "https://github.com/#{speaker['github']}",
+            class: 'speaker-avatar--info-links-item -github'
+      - if speaker['url'].present?
+        = link_to '', "#{speaker['url']}",
+            class: 'speaker-avatar--info-links-item -website'
+

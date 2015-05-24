@@ -1,3 +1,5 @@
+@import "speakers-flags"
+
 .speaker-list
 
 .speaker-list--item
@@ -6,6 +8,9 @@
 
 .speaker-avatar
   text-align: center
+  position: relative
+  height: 100%
+  display: block
 
 .speaker-avatar--photo
   background: $gray
@@ -49,3 +54,30 @@
 
   &:after
     left: 0
+
+.speaker-avatar--countries
+  position: absolute
+  top: 20%
+  left: 0%
+
+.speaker-avatar--countries-item
+  @extend %flag
+
+.speaker-avatar--info-links
+  @extend %page--section-paragraph
+  margin: 0
+
+.speaker-avatar--info-links-item
+  background-size: 100%
+  display: inline-block
+  height: 1.5rem
+  margin: 0.5em 0.1em
+  width: 1.5rem
+
+  @each $type in twitter github dribbble website email
+    &.-#{$type}
+      background-image: inline-svg("icons/#{$type}.svg")
+
+  &:hover
+    filter: brightness(0.9)
+    transform: translateZ(0)

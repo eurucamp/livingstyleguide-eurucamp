@@ -1,6 +1,32 @@
 Speakers
 ========
 
+All these templates work on the same speaker list input. Examples only include actually used attributes to keep them short.
+
+Speaker Avatar
+--------------
+
+```
+@haml
+- speaker = { "name" => "Name One", "image" => "avatar", "href" => "#href" }
+%div{style: "width: 30%; display: block;"}
+  = style_template "speaker-avatar", speaker: speaker, image_dir: '2015/images/dummy', show_flags: false, show_social: false
+```
+
+```
+@haml
+- speaker = { "name" => "Name One", "image" => "avatar", "href" => "#href", "country" => ["DE"], "twitter" => "twitter", "github" => "github", "url" => "http://example.com" }
+%div{style: "width: 30%; display: block;"}
+  = style_template "speaker-avatar", speaker: speaker, image_dir: '2015/images/dummy', show_flags: true, show_social: true
+```
+
+```
+@haml
+- speaker = { "name" => "Name One", "image" => "avatar", "href" => "#href", "country" => ["DE", "US"], "twitter" => "twitter", "github" => "github", "url" => "http://example.com" }
+%div{style: "width: 30%; display: block;"}
+  = style_template "speaker-avatar", speaker: speaker, image_dir: '2015/images/dummy', show_flags: true, show_social: true
+```
+
 Speaker List
 ------------
 

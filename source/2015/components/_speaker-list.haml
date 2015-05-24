@@ -1,4 +1,4 @@
 %ul.speaker-list
   - speakers.each do |speaker|
     .speaker-list--item
-      = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir
+      = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir, show_flags: false, show_social: false

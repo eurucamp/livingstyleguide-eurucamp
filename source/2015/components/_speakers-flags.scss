@@ -1,0 +1,31 @@
+@import 'bourbon';
+
+$supported-countries: cn, de, fr, in, it, gb, us, no, nl, be;
+
+%flag {
+  @include transform(rotate(315deg));
+  @include transition(all 0.5s ease-in-out);
+
+  background-size:  100% 100%;
+  width:            50px;
+  height:           50px;
+  display:          inline-block;
+  opacity:          0.8;
+
+  @each $country in $supported-countries {
+    &.-#{$country} {
+      background-image: image-url("/2015/images/flags/#{$country}.svg");
+    }
+  }
+
+  & + %flag {
+    position: relative;
+    left:     -25px;
+  }
+
+  &:hover {
+    & + %flag {
+      @include transform(translateX(25px) rotate(315deg));
+    }
+  }
+}
