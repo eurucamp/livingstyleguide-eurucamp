@@ -3,10 +3,6 @@
     .speaker-avatar--photo
       = image_tag "#{image_dir}/#{speaker['image']}.jpg", class: 'speaker-avatar--photo-image'
     %h1.speaker-avatar--name= speaker['name']
-  - if show_flags
-    .speaker-avatar--countries
-      - speaker.fetch('country', []).map(&:downcase).each do |country_code|
-        %span{class: "speaker-avatar--countries-item -#{country_code}"} &nbsp;
 
   - if show_social
     .speaker-avatar--info-links

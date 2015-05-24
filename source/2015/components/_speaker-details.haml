@@ -3,7 +3,7 @@
     %h3
       = speaker['talk_title']
   .speaker-details--avatar
-    = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir, show_flags: true, show_social: true
+    = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir, show_social: true
   .speakers-details--info-talk-abstract
     = md2html(speaker['talk_summary'] || '')
   - if speaker['bio'].present?
