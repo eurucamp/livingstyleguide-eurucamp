@@ -23,5 +23,9 @@ Text
     * List item
     * Another list item
     * Last list item
-```
 
+    | Head 1 | Head 2 |
+    | ------ | -----: |
+    | cell   |   cell |
+    | cell   |   cell |
+```
