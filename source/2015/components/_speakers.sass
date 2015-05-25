@@ -77,11 +77,26 @@
   display: block
   clear: both
 
+%speaker-details--column
+  @include grid(4, 8)
+
 .speaker-details--avatar
-  @include grid(4)
+  @extend %speaker-details--column
+  @media all and (max-width: 800px)
+    text-align: center
+    width: 50%
+    margin-left: 25%
+  @media all and (max-width: 600px)
+    width: 80%
+    margin-left: 10%
+
+%speaker-details--text-column
+  @extend %speaker-details--column
+  @media all and (max-width: 800px)
+    padding-bottom: 18px
 
 .speakers-details--info-bio
-  @include grid(4)
+  @extend %speaker-details--text-column
 
 .speakers-details--info-talk-title
   clear: both
@@ -93,7 +108,7 @@
   text-align: center
 
 .speakers-details--info-talk-abstract
-  @include grid(4)
+  @extend %speaker-details--text-column
 
 .speaker-details-list
 
