@@ -7,9 +7,19 @@
 .speakers--container
   @extend %container
 
+.speakers--title
+  @extend %headline
+  color: $white
+
+  &:before
+    content: inline-svg("speakers--icon.svg")
+    display: block
+    margin: auto
+    width: 20px
+
 .speaker-list--item
   @include grid(4, 4, 4 1, 4)
-  margin-bottom: 1em
+  margin: 2em 0
 
 .speaker-avatar
   text-align: center
