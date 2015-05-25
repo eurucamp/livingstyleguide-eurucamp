@@ -74,6 +74,8 @@
 
 .speaker-details
   line-height: 1.5em
+  display: block
+  clear: both
 
 .speaker-details--avatar
   @include grid(4)
@@ -82,14 +84,19 @@
   @include grid(4)
 
 .speakers-details--info-talk-title
-  @extend %page--section-paragraph
+  clear: both
+  display: block
   font-size: 18px
   font-weight: bold
-  margin-bottom: 18px
-  margin-top: 36px
+  padding-bottom: 18px
+  padding-top: 36px
   text-align: center
 
 .speakers-details--info-talk-abstract
   @include grid(4)
 
 .speaker-details-list
+
+.speaker-details-list--item
+  clear: both
+  display: block
