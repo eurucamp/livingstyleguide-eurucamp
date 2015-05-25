@@ -1,8 +1,25 @@
-.speaker-list
+.speakers
+  background: $light-tertiary-color
+  display: block
+  overflow: hidden
+  padding: 50px 0
+
+.speakers--container
+  @extend %container
+
+.speakers--title
+  @extend %headline
+  color: $white
+
+  &:before
+    content: inline-svg("speakers--icon.svg")
+    display: block
+    margin: auto
+    width: 20px
 
 .speaker-list--item
   @include grid(4, 4, 4 1, 4)
-  margin-bottom: 1em
+  margin: 2em 0
 
 .speaker-avatar
   text-align: center
@@ -24,7 +41,7 @@
 
 .speaker-avatar--name
   @extend %ellipsis
-  background: $primary-color
+  background: $tertiary-color
   color: $white
   display: block
   filter: drop-shadow(rgba(black, 0.3) 0 3px 0)
@@ -43,7 +60,7 @@
   &:before,
   &:after
     border: 1rem solid
-    border-color: $primary-color transparent
+    border-color: $tertiary-color transparent
     content: ""
     position: absolute
     margin: 0 -1rem
@@ -80,6 +97,13 @@
 %speaker-details--column
   @include grid(4, 8)
 
+.speaker-details-list--item
+  display: block
+  overflow: hidden
+
+  & + &
+    margin-top: 50px
+
 .speaker-details--avatar
   @extend %speaker-details--column
   @media all and (max-width: 800px)
@@ -102,19 +126,15 @@
   @extend %speaker-details--text-column
 
 .speakers-details--info-talk-title
-  clear: both
+  color: $secondary-color
   display: block
-  font-size: 24px
+  font-size: 3rem
   font-weight: bold
-  padding-bottom: 18px
-  padding-top: 48px
+  margin: 0.5em 0 1em
   text-align: center
 
 .speakers-details--info-talk-abstract
+  color: $dark-secondary-color
   @extend %speaker-details--text-column
 
 .speaker-details-list
-
-.speaker-details-list--item
-  clear: both
-  display: block

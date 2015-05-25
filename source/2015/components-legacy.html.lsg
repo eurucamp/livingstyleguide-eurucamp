@@ -5,8 +5,6 @@
 Those components need to be updated to the style guide API. For now, copy’n’paste the HTML from the examples.
 
 @import components-legacy/cover
-@import components-legacy/speakers
-@import components-legacy/speakers-page
 @import components-legacy/info
 @import components-legacy/flickr
 @import components-legacy/concept
