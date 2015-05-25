@@ -27,4 +27,9 @@ Text
     ![Content image](images/grass.jpg)
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+    | Head 1 | Head 2 |
+    | ------ | -----: |
+    | cell   |   cell |
+    | cell   |   cell |
 ```
