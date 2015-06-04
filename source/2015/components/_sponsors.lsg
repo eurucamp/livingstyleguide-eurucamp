@@ -1,0 +1,48 @@
+Sponsors
+========
+
+```
+@haml
+@full-width
+:ruby
+  sponsors = [
+    { company: "Cool Start Up", url: "https://coolstartup.io", image: "images/dummy/images/image-1.svg" },
+  ]
+= style_template "sponsors", level: ***:platin***, sponsors: sponsors
+```
+
+```
+@haml
+@full-width
+:ruby
+  sponsors = [
+    { company: "Cool Start Up", url: "https://coolstartup.io", image: "images/dummy/images/image-1.svg" },
+    { company: "Rails Agency", url: "https://railsagency.de", image: "images/dummy/images/image-2.svg" },
+  ]
+= style_template "sponsors", level: ***:gold***, sponsors: sponsors
+```
+
+```
+@haml
+@full-width
+:ruby
+  sponsors = [
+    { company: "Cool Start Up", url: "https://coolstartup.io", image: "images/dummy/images/image-1.svg" },
+    { company: "Rails Agency", url: "https://railsagency.de", image: "images/dummy/images/image-2.svg" },
+    { company: "Service Provider", url: "https://serviceprovider.com", image: "images/dummy/images/image-3.svg" },
+  ]
+= style_template "sponsors", level: ***:silver***, sponsors: sponsors
+```
+
+```
+@haml
+@full-width
+:ruby
+  sponsors = [
+    { company: "Cool Start Up", url: "https://coolstartup.io", image: "images/dummy/images/image-1.svg" },
+    { company: "Rails Agency", url: "https://railsagency.de", image: "images/dummy/images/image-2.svg" },
+    { company: "Service Provider", url: "https://serviceprovider.com", image: "images/dummy/images/image-3.svg" },
+    { company: "A Rich Person", url: "https://rich.person.company", image: "images/dummy/images/image-4.svg" },
+  ]
+= style_template "sponsors", level: ***:nickel***, sponsors: sponsors
+```
