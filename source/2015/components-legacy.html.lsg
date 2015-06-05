@@ -10,7 +10,6 @@ Those components need to be updated to the style guide API. For now, copy’n’
 @import components-legacy/concept
 @import components-legacy/flickr-and-concept
 @import components-legacy/events
-@import components-legacy/sponsors
 @import components-legacy/podcast
 @import components-legacy/pure-text
 @import components-legacy/guide

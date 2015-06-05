@@ -10,3 +10,5 @@
 @import components/blog-posts
 @import components/pagination
 @import components/speakers
+@import components/sponsor
+@import components/sponsors

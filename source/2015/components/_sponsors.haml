@@ -1,0 +1,6 @@
+%section.sponsors(class="-#{level.to_s.downcase}")
+  .sponsors--container
+    %h1.sponsors--title #{level.to_s.titleize} Sponsors
+    .sponsors--list
+      - sponsors.each do |sponsor|
+        = style_template "sponsor", sponsor
