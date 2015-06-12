@@ -21,17 +21,17 @@
 body
   background: #913BBE
 
-.my-sponsors
+.sponsors-detail
   display: block
 
 
-.my-sponsors--container
+.sponsors-detail--container
   @extend %container
   padding-bottom: 0px
   margin-bottom: 0px
 
 
-.my-sponsors--title
+.sponsors-detail--title
   @extend %headline
 
   &:before
@@ -41,7 +41,7 @@ body
     width: 20px
 
 
-.my-sponsors--section-title
+.sponsors-detail--section-title
   @extend %pie-clearfix
   font-size: 1.5rem
   text-transform: uppercase
@@ -51,13 +51,13 @@ body
   color: $red
   padding-bottom: 50px
 
-.my-sponsors--list
+.sponsors-detail--list
   display: block
   margin-top: 100px
   @media all and (max-width: 800px)
     margin-top: 100px
 
-.my-sponsors--list-item-label, .my-sponsors--page-list-item-label
+.sponsors-detail--list-item-label, .sponsors-detail--page-list-item-label
   display: block
   background: $red
   color: $white
@@ -72,16 +72,16 @@ body
   text-transform: uppercase
   @include transform(rotate(-90deg))
 
-.my-sponsors--list-item-label
+.sponsors-detail--list-item-label
   margin: -1% 70% 0 70%
   margin-top: -30%
   margin-left: -20%
 
 .-nickel
-  .my-sponsors--page-list-item-label
+  .sponsors-detail--page-list-item-label
     margin-top: -30%
 
-.my-sponsors--list-item
+.sponsors-detail--list-item
   @include grid(4, 4, 6)
   margin-top: 0px
   margin-bottom: 50px
@@ -89,40 +89,41 @@ body
   max-width: 350px
 
 
-.my-sponsors--list-item-image
+.sponsors-detail--list-item-image
   padding: 0 20px 0 20px
   display: inline-block
   width: 100%
 
-.my-sponsors--buttons
+.sponsors-detail--buttons
   @extend %pie-clearfix
 
 
-.my-sponsors--show-more
+.sponsors-detail--show-more
   @extend %show-more
   background: $dark-red
   &:hover
     background: $red
 
-.my-sponsors.-home
+.sponsors-detail.-home
   padding-bottom: 50px
 
 
-.my-sponsors-page--title
+.sponsors-detail-page--title
   @extend %page--title
   font-size: 6rem
   margin: 170px
+  color: white
   @include transform-origin(100px, 250px)
   @media all and (max-width: 600px)
     font-size: 4rem
     @include transform-origin(150px, 150px)
     margin: 40px
 
-.my-sponsors-page--companies
-  .my-sponsors--section
+.sponsors-detail-page--companies
+  .sponsors-detail--section
     @extend %page--section
 
-  .my-sponsors--section-title
+  .sponsors-detail--section-title
     @extend %page--section-title
     color: $white
     z-index: -1
@@ -137,20 +138,20 @@ body
       margin-left: 0px
       text-align: left
       margin-bottom: -50px
-  .my-sponsors--list
+  .sponsors-detail--list
     @extend %pie-clearfix
 
-  .my-sponsors--section.-gold
-    .my-sponsors--section-title:before
+  .sponsors-detail--section.-gold
+    .sponsors-detail--section-title:before
       background: #c4af70
-    .my-sponsors--section-title
+    .sponsors-detail--section-title
       @media all and (max-width: 800px)
         margin-top: 300px
         margin-bottom: 10px
       @media all and (max-width: 600px)
         margin-top: 150px
 
-    .my-sponsors--list-item
+    .sponsors-detail--list-item
       @include grid(12, 8, 6)
       height: 100%
       max-width: 100%
@@ -163,27 +164,27 @@ body
       @media all and (max-width: 800px)
         margin-top: 100px
         margin-bottom: 0
-    .my-sponsors--list-item-name
+    .sponsors-detail--list-item-name
       @include grid(8, 4, 6)
-    .my-sponsors--section-item-text
+    .sponsors-detail--section-item-text
       color: white
       @include grid(4, 4, 6)
       @media all and (max-width: 600px)
         padding: 30px 10% 30px 10%
         font-size: 18px
 
-  .my-sponsors--section.-silver
+  .sponsors-detail--section.-silver
     margin-top: -100px
-    .my-sponsors--section-title:before
+    .sponsors-detail--section-title:before
       background: $gray
-    .my-sponsors--section-title
+    .sponsors-detail--section-title
       @media all and (max-width: 800px)
         margin-top: 300px
         margin-bottom: 10px
       @media all and (max-width: 600px)
         margin-top: 150px
 
-    .my-sponsors--list-item
+    .sponsors-detail--list-item
       @include grid(12, 8, 6)
       height: 100%
       max-width: 100%
@@ -195,46 +196,46 @@ body
       @media all and (max-width: 800px)
         margin-top: 100px
         margin-bottom: 0
-    .my-sponsors--list-item-name
+    .sponsors-detail--list-item-name
       @include grid(6, 4, 6)
-    .my-sponsors--section-item-text
+    .sponsors-detail--section-item-text
       @include grid(6, 4, 6)
       @media all and (max-width: 600px)
         padding: 30px 10% 30px 10%
         font-size: 18px
 
-  .my-sponsors--section.-nickel
+  .sponsors-detail--section.-nickel
     margin-top: 150px
     margin-bottom: 100px
-    .my-sponsors--section-title:before
+    .sponsors-detail--section-title:before
       background: #c49570
-    .my-sponsors--section-title
+    .sponsors-detail--section-title
       @media all and (max-width: 800px)
         margin-bottom: 10px
-    .my-sponsors--list
+    .sponsors-detail--list
       @include grid(12, 8, 6)
-    .my-sponsors--list-item
+    .sponsors-detail--list-item
       @include grid(4, 4, 6)
       height: 150px
       margin-top: 25px
       @media all and (max-width: 800px)
         margin-top: 25px
         margin-bottom: 0
-    .my-sponsors--list-item-name
+    .sponsors-detail--list-item-name
       //@include grid(12, 8, 6)
-    .my-sponsors--section-item-text
+    .sponsors-detail--section-item-text
       display: none
 
-.my-sponsors--section-item-text
+.sponsors-detail--section-item-text
   font-size: 17px
   a
     color: $red
 
 
-.my-sponsors-page--info
-  .my-sponsors--section
+.sponsors-detail-page--info
+  .sponsors-detail--section
     @extend %page--section
-  .my-sponsors--section-title
+  .sponsors-detail--section-title
     @extend %page--section-title
     color: $white
     margin-top: 200px
@@ -251,7 +252,7 @@ body
     @media all and (max-width: 600px)
       margin-bottom: -50px
 
-.my-sponsors-page--info-text
+.sponsors-detail-page--info-text
   @extend %pie-clearfix
   @include grid(6, 4, 4)
   color: white
@@ -262,13 +263,13 @@ body
     margin-top: 150px
     margin-left: 10%
 
-.my-sponsors-page--buttons
+.sponsors-detail-page--buttons
   @extend %pie-clearfix
   @include grid(6, 4, 6)
   margin-top: 50px
   text-align: center
 
-.my-sponsors-page--show-more
+.sponsors-detail-page--show-more
   @extend %show-more
   background: $dark-red
   &:hover
