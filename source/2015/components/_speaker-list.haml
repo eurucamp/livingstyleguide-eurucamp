@@ -2,6 +2,6 @@
   .speakers--container
     %h3.speakers--title Meet our Speakers
     %ul.speaker-list
-    - speakers.each do |speaker|
-      .speaker-list--item
-        = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir, show_social: false
+      - speakers.each do |speaker|
+        .speaker-list--item
+          = style_template "speaker-avatar", speaker: speaker, image_dir: image_dir, show_social: false
