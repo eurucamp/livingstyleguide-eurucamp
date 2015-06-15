@@ -106,6 +106,14 @@
   padding-bottom: 50px
 
 
+.sponsors-detail-page
+  @extend %page
+  background: #212C2B
+  color: $white
+
+.sponsors-detail-page--container
+  @extend %page--container
+
 .sponsors-detail-page--title
   @extend %page--title
   font-size: 6rem
@@ -124,7 +132,6 @@
   .sponsors-detail--section-title
     @extend %page--section-title
     color: $white
-    z-index: -1
     margin-top: 200px
     margin-left: 200px
     margin-bottom: -200px
@@ -273,4 +280,3 @@
   background: $dark-red
   &:hover
     background: $red
-
