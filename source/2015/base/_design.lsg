@@ -1,0 +1,59 @@
+Design
+======
+
+Main design element of 2015’s eurucamp is our cover composed out of the well-known eurucamp flag.
+The cover should be used on top of all media (website, social media accounts, prints, posters, …).
+Depending on other content, choose if the version with or without “eurucamp” fits better.
+
+<ul class="livingstyleguide--covers">
+  <li>
+    Landscape without name
+    <img src="images/eurucamp-2015-cover.svg">
+    <a href="images/eurucamp-2015-cover.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015-cover.jpg" download class="button">JPG</a>
+  </li>
+  <li>
+    Landscape with name
+    <img src="images/eurucamp-2015-cover-name.svg">
+    <a href="images/eurucamp-2015-cover-name.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015-cover-name.jpg" download class="button">JPG</a>
+  </li>
+  <li>
+    Portrait without name
+    <img src="images/eurucamp-2015-cover-portrait.svg">
+    <a href="images/eurucamp-2015-cover-portrait.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015-cover-portrait.jpg" download class="button">JPG</a>
+  </li>
+  <li>
+    Portrait with name
+    <img src="images/eurucamp-2015-cover-portrait-name.svg">
+    <a href="images/eurucamp-2015-cover-portrait-name.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015-cover-portrait-name.jpg" download class="button">JPG</a>
+  </li>
+</ul>
+
+@css
+  @at-root
+    .livingstyleguide--covers
+      @extend .livingstyleguide--example
+      @extend .layout
+  .livingstyleguide--covers
+    overflow: hidden
+    padding: 20px
+
+    li
+      color: $gray
+      display: block
+      float: left
+      font-weight: bold
+      padding: 20px
+      text-align: center
+      width: 100%
+
+      &:nth-child(n + 3)
+        width: 50%
+
+    img
+      display: block
+      margin: 10px auto
+      width: 100%
