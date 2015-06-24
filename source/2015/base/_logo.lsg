@@ -1,8 +1,47 @@
 Logo
 ====
 
-Normal usage:
+* Always prefer the turquoise logo if possible
+* Use logo on white background for social media profiles (just download and upload the PNG version)
+* Do not use any other logo (like logos from past or future eurucamps)
 
-<div class="livingstyleguide--example" style="text-align: center; padding: 30px">
-  <img src="images/eurucamp-2015.svg" style="width: 50%">
-</div>
+<ul class="livingstyleguide--logos">
+  <li>
+    Default
+    <img src="images/eurucamp-2015.svg">
+    <a href="images/eurucamp-2015.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015.png" download class="button">PNG</a>
+  </li>
+  <li>
+    Alternative
+    <img src="images/eurucamp-2015-alternative.svg">
+    <a href="images/eurucamp-2015-alternative.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015-alternative.png" download class="button">PNG</a>
+  </li>
+  <li>
+    B/W Print
+    <img src="images/eurucamp-2015-print.svg">
+    <a href="images/eurucamp-2015-print.svg" download class="button">SVG</a>
+    <a href="images/eurucamp-2015-print.png" download class="button">PNG</a>
+  </li>
+</ul>
+
+
+@css
+  @at-root
+    .livingstyleguide--logos
+      @extend .livingstyleguide--example
+      @extend .layout
+  .livingstyleguide--logos
+    display: flex
+    padding: 20px
+
+    li
+      color: $gray
+      flex: 1
+      font-weight: bold
+      margin: 20px
+      text-align: center
+
+    img
+      width: 100%

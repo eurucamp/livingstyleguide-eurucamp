@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="736px" height="736px" viewBox="0 0 736 736" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
-    <title>eurucamp-flag</title>
+    <title>eurucamp-2015</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="eurucamp-flag" sketch:type="MSLayerGroup" transform="translate(28.000000, 155.000000)">
+        <g id="eurucamp-flag" sketch:type="MSLayerGroup" transform="translate(28.000000, 154.500000)">
             <g id="flag" transform="translate(1.175652, 0.000000)" sketch:type="MSShapeGroup">
                 <path d="M674.6244,356.582311 L3.57049919,423.429878 C3.57049919,423.429878 45.3024938,306.575298 45.3024938,206.446905 C45.3024938,106.318512 3.57049919,2.00142419 3.57049919,2.00142419 L674.6244,68.8204002 L491.072177,208.534104 L674.6244,356.582311 L674.6244,356.582311 Z" id="flag-background" fill="#4FB79B"></path>
                 <path d="M84.7636509,10.1071921 L474.605035,376.496481 L674.6244,356.568015 L491.072177,208.534104 L674.6244,68.8204002 L84.7636509,10.1071921 L84.7636509,10.1071921 Z" id="flag-highlight" fill="#7DC5B1"></path>
