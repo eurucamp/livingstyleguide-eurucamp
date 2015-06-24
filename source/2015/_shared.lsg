@@ -71,7 +71,7 @@
       margin-top: -10px
 
     .livingstyleguide--nav
-      background: $secondary-color
+      background: $tertiary-color
       display: block
       font-family: sonar
       padding: 1em
