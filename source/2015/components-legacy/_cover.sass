@@ -1,35 +1,14 @@
 .cover
-  background: $white no-repeat center
-  background-size: cover
+  background: $secondary-color
   display: block
 
 
 .cover--container
   @extend %container
-  background: inline-svg("eurucamp-2015.svg") no-repeat center
+  background: url("images/eurucamp-2015-cover-name.svg") no-repeat top center/cover
   display: block
   height: 450px
   position: relative
   @media all and (max-width: 700px)
-    background-size: 80%
-    height: 350px
-
-.cover--date,
-.cover--location
-  color: #FFB2D2
-  font-weight: bold
-  left: 50%
-  margin-left: -160px
-  position: absolute
-  text-align: center
-  text-transform: uppercase
-  top: 180px
-  width: 320px
-  @media all and (max-width: 700px)
-    top: 68px
-
-
-.cover--location
-  top: 242px
-  @media all and (max-width: 700px)
-    top: 264px
+    background-size: 210%
+    height: 66vw

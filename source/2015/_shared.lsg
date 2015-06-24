@@ -43,7 +43,7 @@
 
     .livingstyleguide .livingstyleguide--page-title
       color: $light-tertiary-color
-      margin-top: 220px
+      margin-top: 225px
       text-align: center
       width: 100%
 
