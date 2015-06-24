@@ -36,6 +36,7 @@ Depending on other content, choose if the version with or without “eurucamp”
   @at-root
     .livingstyleguide--covers
       @extend .livingstyleguide--example
+      @extend .livingstyleguide--example.-lsg-has-full-width
       @extend .layout
   .livingstyleguide--covers
     overflow: hidden
