@@ -43,7 +43,7 @@
 
     .livingstyleguide .livingstyleguide--page-title
       color: $light-tertiary-color
-      margin-top: 220px
+      margin-top: 225px
       text-align: center
       width: 100%
 
@@ -93,7 +93,7 @@
     %p.livingstyleguide--paragraph
       Welcome to <strong>eurucamp’s <a href="http://livingstyleguide.org">front-end style guide</a>.</strong> This is the central place where all CSS and assets for <a href="http://2015.eurucamp.org/">2015.eurucamp.org</a> are defined and maintained. The source of this document and the Sass code are available at <a href="https://github.com/eurucamp/livingstyleguide-eurucamp">github.com/eurucamp/livingstyleguide-eurucamp</a>.
   %nav.livingstyleguide--nav
-    %a.livingstyleguide--nav-item(href=".") Start
+    %a.livingstyleguide--nav-item(href=".") Brand
     %a.livingstyleguide--nav-item(href="atoms.html") Atoms
     %a.livingstyleguide--nav-item(href="components.html") API Components
     %a.livingstyleguide--nav-item(href="components-legacy.html") HTML Components
