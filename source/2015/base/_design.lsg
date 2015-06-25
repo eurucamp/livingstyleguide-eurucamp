@@ -43,7 +43,7 @@ Depending on other content, choose if the version with or without “eurucamp”
     padding: 20px
 
     li
-      color: $gray
+      color: $dark-gray
       display: block
       float: left
       font-weight: bold

@@ -2,7 +2,7 @@
 
 @style base-font: sonar
 @style base-font-size: 16px
-@style color: mix($dark-gray, $primary-color)
+@style color: $dark-gray
 @style code-background-color: mix($light-tertiary-color, $white)
 @style code-color: $secondary-color
 @style highlight-color: $white
@@ -21,9 +21,11 @@
     .livingstyleguide--sub-headline,
     .livingstyleguide--sub-sub-headline
       margin-bottom: 1em
-      margin-top: 3em
       text-align: center
       text-transform: uppercase
+
+    .livingstyleguide--headline,
+      margin-top: 5em !important
 
     .livingstyleguide--example.-lsg-has-full-width
       padding: 0
@@ -42,7 +44,7 @@
         max-width: 100%
 
     .livingstyleguide .livingstyleguide--page-title
-      color: $light-tertiary-color
+      color: #dffdf5
       margin-top: 225px
       text-align: center
       width: 100%
@@ -52,6 +54,7 @@
 
     .livingstyleguide--intro
       background: $light-tertiary-color
+      color: $secondary-color
       display: block
       padding: 50px 0
 
@@ -59,10 +62,10 @@
         font-size: 20px
 
       a
-        color: $secondary-color
+        border-bottom: 1px $tertiary-color solid
 
         &:hover
-          color: darken($dark-secondary-color, 10%)
+          border-bottom-color: $white
 
     .livingstyleguide--html
       @extend .layout

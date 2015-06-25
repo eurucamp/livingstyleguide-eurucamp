@@ -37,7 +37,7 @@ Logo
     padding: 20px
 
     li
-      color: $gray
+      color: $dark-gray
       flex: 1
       font-weight: bold
       margin: 20px
