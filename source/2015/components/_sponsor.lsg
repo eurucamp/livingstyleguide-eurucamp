@@ -2,7 +2,7 @@ Sponsor
 =======
 
 ```
-= style_template "sponsor", company: "Cool Start Up", url: "https://coolstartup.io", image: "images/dummy/images/image-1.svg"
+= style_template "sponsor", company: "Cool Start Up", url: "https://coolstartup.io", image: "dummy/logos/logo-1.svg"
 @haml
 @css
   background: $dark-gray

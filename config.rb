@@ -40,6 +40,8 @@ activate :livereload
 
 activate :autoprefixer, inline: true
 
+set :images_dir, "2015/images"
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def commit
