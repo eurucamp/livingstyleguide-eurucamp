@@ -1,0 +1,8 @@
+Supporters
+==========
+
+```
+@haml
+@full-width
+= style_template "supporters", supporters: ["Marge Simpson", "Homer Simpson", "Lisa Simpson", "Bart Simpson", "Maggie Simpson"]
+```

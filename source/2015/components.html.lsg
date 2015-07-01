@@ -12,3 +12,4 @@
 @import components/speakers
 @import components/sponsor
 @import components/sponsors
+@import components/supporters
