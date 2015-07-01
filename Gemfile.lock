@@ -73,7 +73,7 @@ GEM
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    livingstyleguide (2.0.0.alpha.7)
+    livingstyleguide (2.0.0.alpha.8)
       minisyntax (>= 0.2.5)
       redcarpet (~> 3.0.0)
       sass
@@ -185,7 +185,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  livingstyleguide (= 2.0.0.alpha.7)
+  livingstyleguide (= 2.0.0.alpha.8)
   middleman
   middleman-autoprefixer
   middleman-livereload (~> 3.1.0)
