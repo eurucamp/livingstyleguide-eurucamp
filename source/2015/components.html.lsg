@@ -7,6 +7,7 @@
 @import components/layout
 @import components/subnavigation
 @import components/text
+@import components/sass
 @import components/blog-post
 @import components/blog-posts
 @import components/pagination

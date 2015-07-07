@@ -1,1 +1,5 @@
-<%= StyleGuideAPI.to_json %>
+<%=
+  StyleGuideAPI.to_json.gsub %r(\#\{File\.read\(\\"(source/2015/base/_.+?\.sass)\\"\)\}) do
+    File.read($1).gsub("\n", "\\n  ").gsub('"', '\\"')
+  end
+%>

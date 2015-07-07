@@ -1,0 +1,12 @@
+Sass
+====
+
+You can write additional Sass code while having the style guide variables available:
+
+```
+@haml
+= style_template "sass" do
+  :plain
+    .my-class
+      color: $primary-color
+```
