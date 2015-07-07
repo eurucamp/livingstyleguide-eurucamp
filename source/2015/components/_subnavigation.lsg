@@ -1,0 +1,12 @@
+Subnavigation
+=============
+
+
+Header
+------
+
+```
+@haml
+- items = [ { url: "page-1", text: "Page 1", selected: true }, { url: "page-2", text: "Page 2" }, { url: "page-3", text: "Page 3" } ]
+= style_template "subnavigation", items: items
+```

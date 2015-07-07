@@ -1,0 +1,7 @@
+.subnavigation
+  %nav.subnavigation--container
+    - items.each do |item|
+      - if item[:selected]
+        %span.subnavigation--item.-selected= item[:text]
+      - else
+        %a.subnavigation--item(href="#{item[:url]}")= item[:text]

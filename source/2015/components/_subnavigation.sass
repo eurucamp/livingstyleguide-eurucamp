@@ -1,0 +1,25 @@
+.subnavigation
+  @extend %pie-clearfix
+  background: $tertiary-color
+  display: block
+  padding: 10px 0
+
+
+.subnavigation--container
+  @extend %container
+  padding-bottom: 0
+  padding-top: 0
+  text-align: right
+
+
+.subnavigation--item
+  color: $white
+  cursor: pointer
+  display: inline-block
+  font-weight: bold
+  margin-left: 20px
+  text-transform: uppercase
+
+  &:hover,
+  &.-selected
+    color: $light-tertiary-color
