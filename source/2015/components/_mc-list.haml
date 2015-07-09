@@ -1,0 +1,8 @@
+.speakers
+  .speakers--container
+    %h3.speakers--title Meet our Masters of Ceremony
+    %ul.speaker-list--mc
+      - mcs.each do |mc|
+        .speaker-list--item
+          = style_template "speaker-avatar", speaker: mc, image_dir: image_dir, show_social: false
+

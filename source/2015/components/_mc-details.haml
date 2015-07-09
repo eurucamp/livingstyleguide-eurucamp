@@ -1,0 +1,6 @@
+.speaker-details(id="#{mc['anchor']}"){class: ("speaker-details--right" if right)}
+  .speaker-details--avatar
+    = style_template "speaker-avatar", speaker: mc, image_dir: image_dir, show_social: true
+  - if mc['bio'].present?
+    .speakers-details--info-bio
+      = md2html(mc['bio'] || '')
