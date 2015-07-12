@@ -30,6 +30,16 @@ Speaker List
 = style_template "speaker-list", speakers: speakers, image_dir: '2015/images/dummy'
 ```
 
+MCs List
+------------
+
+```
+@haml
+@full-width
+- mcs = [ { "name" => "Name One", "image" => "avatar", "href" => "#href" }, { "name" => "Name Two", "image" => "avatar", "href" => "#href" } ]
+= style_template "mc-list", mcs: mcs, image_dir: '2015/images/dummy'
+```
+
 Speaker Details
 ---------------
 

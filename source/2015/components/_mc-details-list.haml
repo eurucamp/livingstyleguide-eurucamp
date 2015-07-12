@@ -1,0 +1,7 @@
+.speakers
+  .speakers--container
+    %h1.speakers--title Meet our Masters of Ceremony
+    %ul.speaker-details-list--mc
+      - mcs.each_with_index do |mc, index|
+        %li.speaker-details-list--item
+          = style_template "mc-details", mc: mc, image_dir: image_dir, right: index.odd?
