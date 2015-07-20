@@ -1,0 +1,55 @@
+Schedule
+=========
+
+```
+@full-width
+<div class="***schedule***">
+  <div class="***schedule--container***">
+    <h1 class="***schedule--main-title***">
+      Schedule
+    </h1>
+    <article id="***schedule***">
+      <h2 class="***schedule--day-title***">Friday</h2>
+      <h3 class="***schedule--day-subtitle***">Note title</h3>
+      <p class="***schedule--day-extra-info***">
+        Note content, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <a href="">Quisque id ullamcorper sem</a>
+      </p>
+      <h3 class="***schedule--day-subtitle***">eurucamp main sessions</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td class="***time***">18:30</td>
+            <td class="***activity -s-60m***" colspan="2" rowspan="1">
+              <p class="***title***">Activity</p>
+              <p class="***speaker***"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="***time***">19:30</td>
+            <td class="***talk -s-15m***" colspan="2" rowspan="1">
+              <p class="***title***">Talk without Speaker</p>
+              <p class="***speaker***"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="***time***">19:45</td>
+            <td class="***talk -s-45m***" colspan="2" rowspan="1">
+              <p class="***title***"><a href="">Talk with Speaker</a></p>
+              <p class="***speaker***">Name One</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="***time***">20:30</td>
+            <td class="***activity -s-209m***" colspan="2" rowspan="1">
+              <p class="***title***">Activity</p>
+              <p class="***speaker***"></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </div>
+</div>
+```
+
