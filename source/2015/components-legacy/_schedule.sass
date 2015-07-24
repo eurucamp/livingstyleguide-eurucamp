@@ -1,11 +1,14 @@
 .schedule
-  background: $primary-color
+  background: #212C2B
   display: block
   p
     font-size: 20px
 
 .schedule--container
   @extend %container
+  background: #212C2B
+  @media all and (max-width: 1200px)
+    padding-top: 150px
 
 .schedule--title
   @extend %headline
@@ -14,10 +17,16 @@
 
 .schedule--main-title
   @extend %page--title
-  color: $dark-secondary-color
-  margin: 80px
-  pointer-events: none
-  transform-origin: 100px 250px
+  margin: 180px
+  font-size: 6rem
+  color: white
+  transform-origin: 10px 650px
+
+  @media all and (max-width: 1200px)
+    font-size: 4rem
+    transform-origin: 100px 100px
+    margin: 5px
+    padding-bottom: 30px
 
 .schedule--main-title + .schedule--day-title
   margin-top: 350px
@@ -29,6 +38,9 @@
   margin-left: 10%
   text-align: center
   font-size: 5rem
+  @media all and (max-width: 600px)
+    font-size: 3.5rem
+
 
 .schedule--day-subtitle
   @extend %headline
