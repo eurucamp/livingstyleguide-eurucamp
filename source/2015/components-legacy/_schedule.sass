@@ -1,11 +1,14 @@
 .schedule
-  background: $primary-color
+  background: #212C2B
   display: block
   p
     font-size: 20px
 
 .schedule--container
   @extend %container
+  background: #212C2B
+  @media all and (max-width: 1200px)
+    padding-top: 150px
 
 .schedule--title
   @extend %headline
@@ -14,10 +17,16 @@
 
 .schedule--main-title
   @extend %page--title
-  color: $dark-secondary-color
-  margin: 80px
-  pointer-events: none
-  transform-origin: 100px 250px
+  margin: 180px
+  font-size: 6rem
+  color: white
+  transform-origin: 10px 650px
+
+  @media all and (max-width: 1200px)
+    font-size: 4rem
+    transform-origin: 100px 100px
+    margin: 5px
+    padding-bottom: 30px
 
 .schedule--main-title + .schedule--day-title
   margin-top: 350px
@@ -26,7 +35,12 @@
   @extend %headline
   color: $light-tertiary-color
   margin-top: 50px
-  text-align: left
+  margin-left: 10%
+  text-align: center
+  font-size: 5rem
+  @media all and (max-width: 600px)
+    font-size: 3.5rem
+
 
 .schedule--day-subtitle
   @extend %headline
@@ -57,6 +71,7 @@
 
   th, td
     text-align: center
+    vertical-align: middle
 
     @each $slot-size in $slot-sizes
       &.-s-#{$slot-size}m
@@ -66,6 +81,7 @@
 
   .title
     @extend %page--section-paragraph
+    font-weight: bold
     margin: 0.5em 0 0
     a
       color: $primary-color
@@ -111,32 +127,26 @@
   .time
     width: 10%
     text-align: right
-    vertical-align: top
     background: none
     color: $white
     font-size: 24px
-    border-top: 1px solid $white
+    padding-right: 0.5em
 
   .talk
     background: $white
     .event_location
       color: $primary-color
 
+  .mcs
+    background: $light-tertiary-color
+
   span.title
     display: block
-  .break,
-  .lunch
-    background: $primary-color
-    color: $white
-  .party
+  .activity
     background: darken($primary-color, 10%)
     color: $white
     .event_location
       color: $white
-
-  .activities
-    background: $light-tertiary-color
-    color: $primary-color
 
   .event_location
     display: block

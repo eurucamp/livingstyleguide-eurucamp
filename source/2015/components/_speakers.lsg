@@ -27,10 +27,11 @@ Speaker List
 @haml
 @full-width
 - speakers = [ { "name" => "Name One", "image" => "avatar", "href" => "#href" }, { "name" => "Name Two", "image" => "avatar", "href" => "#href" }, { "name" => "Name Three", "image" => "avatar", "href" => "#href" }, { "name" => "Name Four", "image" => "avatar", "href" => "#href" } ]
-= style_template "speaker-list", speakers: speakers, image_dir: '2015/images/dummy'
+- keynote = { "name" => "Keynoter", "image" => "avatar", "href" => "#href" }
+= style_template "speaker-list", speakers: speakers, keynote: keynote, image_dir: '2015/images/dummy'
 ```
 
-MCs List
+MC List
 ------------
 
 ```
@@ -55,6 +56,22 @@ Speaker Details
 = style_template "speaker-details", speaker: speaker, image_dir: '2015/images/dummy', right: true
 ```
 
+MC Details
+---------------
+
+```
+@haml
+- mc = { "name" => "Name One", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }
+= style_template "mc-details", mc: mc, image_dir: '2015/images/dummy', right: false
+```
+
+```
+@haml
+- mc = { "name" => "Name One", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }
+= style_template "mc-details", mc: mc, image_dir: '2015/images/dummy', right: true
+```
+
+
 
 Speaker Details List
 --------------------
@@ -63,5 +80,16 @@ Speaker Details List
 @haml
 @full-width
 - speakers = [ { "name" => "Name One", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "talk_title" => "The Title of the Talk", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "talk_summary" => "The Talk Summary. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }, { "name" => "Name One", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "talk_title" => "The Title of the Talk", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "talk_summary" => "The Talk Summary. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." } ]
-= style_template "speaker-details-list", speakers: speakers, image_dir: '2015/images/dummy'
+- keynote = { "name" => "Keynoter", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "talk_title" => "Keynote", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }
+= style_template "speaker-details-list", speakers: speakers, keynote: keynote, image_dir: '2015/images/dummy'
+```
+
+MC Details List
+--------------------
+
+```
+@haml
+@full-width
+- mcs = [ { "name" => "Name One", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }, { "name" => "Name One", "image" => "avatar", "anchor" => "anchor", "twitter" => "twitter", "github" => "github", "url" => "http://example.com", "bio" => "The bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." } ]
+= style_template "mc-details-list", mcs: mcs, image_dir: '2015/images/dummy'
 ```

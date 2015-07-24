@@ -1,0 +1,8 @@
+Supporting Companies
+==========
+
+```
+@haml
+@full-width
+= style_template "supporting_companies", companies: ["Marge Simpson", "Homer Simpson", "Lisa Simpson", "Bart Simpson", "Maggie Simpson"]
+```

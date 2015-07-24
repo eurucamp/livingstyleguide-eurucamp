@@ -193,3 +193,6 @@ DEPENDENCIES
   quotation-marks
   styleguide-api
   wdm (~> 0.1.0)
+
+BUNDLED WITH
+   1.10.2
