@@ -71,6 +71,7 @@
 
   th, td
     text-align: center
+    vertical-align: middle
 
     @each $slot-size in $slot-sizes
       &.-s-#{$slot-size}m
@@ -80,6 +81,7 @@
 
   .title
     @extend %page--section-paragraph
+    font-weight: bold
     margin: 0.5em 0 0
     a
       color: $primary-color
@@ -125,11 +127,10 @@
   .time
     width: 10%
     text-align: right
-    vertical-align: top
     background: none
     color: $white
     font-size: 24px
-    border-top: 1px solid $white
+    padding-right: 0.5em
 
   .talk
     background: $white
