@@ -5,5 +5,5 @@
       - supporting_companies.each do |company|
         %li.supporters--list-item
           - unless company.image == ""
-            %img.supporters--image{src: "../images/content/sponsors/#{company.image}"}
+            %img.supporters--image{src: "#{image_dir}/#{company.image}"}
           %span= company.company

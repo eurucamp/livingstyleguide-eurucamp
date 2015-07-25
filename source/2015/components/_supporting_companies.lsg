@@ -4,5 +4,9 @@ Supporting Companies
 ```
 @haml
 @full-width
-= style_template "supporting_companies", companies: ["Marge Simpson", "Homer Simpson", "Lisa Simpson", "Bart Simpson", "Maggie Simpson"]
+- Company = Struct.new(:company, :image)
+- sc = []
+- sc << Company.new("Springfield nuclear power plant", "logo-1.svg")
+- sc << Company.new("Moe’s tavern", "logo-2.svg")
+= style_template "supporting_companies", image_dir: "/2015/images/dummy/logos", supporting_companies: sc
 ```
