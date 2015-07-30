@@ -4,5 +4,5 @@ Supporting Companies
 ```
 @haml
 @full-width
-= style_template "supporting_companies", companies: ["Marge Simpson", "Homer Simpson", "Lisa Simpson", "Bart Simpson", "Maggie Simpson"]
+= style_template "supporting_companies", supporting_companies: [ { company: "Marge Simpson", url: "http://www.simpsonsworld.com" }, { company: "Homer Simpson"} , { company: "Lisa Simpson" }, { company: "Bart Simpson" }, { company: "Maggie Simpson" }]
 ```
