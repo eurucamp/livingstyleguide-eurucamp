@@ -151,7 +151,7 @@ end
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket = 'style-guide.eurucamp.org'
-  s3_sync.region = 'eu-west-1'
+  s3_sync.region = 'eu-central-1'
 end
 
 helpers do
